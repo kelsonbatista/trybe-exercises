@@ -6,7 +6,7 @@ Trybe is a web development school focused on professional success of its student
 
 ## Web Development fundamentals
 
-[b] Block 01 - Unix, Bash and Shell Script [/b]
+**Block 01 - [Unix, Bash and Shell Script](https://github.com/kelsonbatista/trybe-exercises/tree/main/01-fundamentals/01-unix-n-bash)**
 
 - [x] 1.3 - Web development fundamentals
 - [ ] 1.3 - Unix & Shell Introduction
