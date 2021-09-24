@@ -2,7 +2,7 @@
 
 ## Fullstack Web Development School
 
-Trybe is a web development school focused on professional success of its students, prepared for the IT market.
+Trybe is a web development school focused on professional success of its students, preparing for the IT market.
 
 ## Web Development fundamentals
 
@@ -43,6 +43,7 @@ Trybe is a web development school focused on professional success of its student
 **Block 10 - [Automated Tests with Jest](https://github.com/kelsonbatista/trybe-exercises/tree/main/01-fundamentals/10-automated-tests-with-jest)**
 
 
+
 ## Front-end Development
 
 **Block 11 - [Introduction to React]()**
@@ -62,6 +63,8 @@ Trybe is a web development school focused on professional success of its student
 **Block 18 - [Context API and React Hooks]()**
 
 **Block 19 - [Receipes App Project]()**
+
+
 
 ## Back-end Development
 
@@ -90,6 +93,8 @@ Trybe is a web development school focused on professional success of its student
 **Block 31 - [Sockets]()**
 
 **Block 32 - [Delivery App Project]()**
+
+
 
 ## Computer Science
 
