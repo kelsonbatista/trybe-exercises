@@ -1,6 +1,8 @@
 linha 1
 mais um texto
 outro texto
+adicionando outra linha aqui
+mais uma linha adicionada
 new2 nova linha
 new2 outra linha
 new2 mais uma linha
