@@ -1,0 +1,34 @@
+.header-title {
+    text-align: center;
+    background-color: bisque;
+}
+
+.description-wrapper {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.description-wrapper p {
+    color: red;
+}
+
+.hard-skills-wrapper {
+    display: inline-block;
+    margin-left: 20%;
+}
+
+.hard-skills-wrapper ul li:nth-child(2n-1){
+    color: blue;
+}
+
+.soft-skills-wrapper {
+    float: right;
+    margin-right: 20%;
+}
+
+.footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
