@@ -1,13 +1,16 @@
 .caixa {
   color: white;
   display:inline-block;
-  line-height: 50px;
+  line-height: 100px;
   text-align: center;
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
 }
 
 .width-and-height {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
 }
 
 /* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
