@@ -1,4 +1,52 @@
-aside, main {
+body {
+  font-size: 20px;
+}
+
+aside {
   background-color: lightpink;
-  border: 2px solid red;
+  border: 3px solid red;
+  width: 20%;
+}
+
+header.header-main {
+  padding: 10px;
+  background-color: lightgreen;
+  border: 3px solid red;
+  height: 50px;
+  margin: 5px 0;
+}
+
+nav.nav-main {
+  padding: 10px;
+  background-color: lightyellow;
+  border: 3px solid red;
+  margin: 5px 0;
+}
+
+nav ul.nav-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+article.article-main {
+  padding: 10px;
+  background-color: lightpink;
+  border: 3px solid red;
+  margin: 5px 0;
+  width: 80%;
+}
+
+section {
+  background-color: aqua;
+  padding: 10px;
+  margin: 10px 0;
+  border: 3px solid red;
+}
+
+footer {
+  padding: 10px;
+  background-color: lightblue;
+  height: 50px;
+  margin: 5px 0;
+  border: 3px solid red;
 }

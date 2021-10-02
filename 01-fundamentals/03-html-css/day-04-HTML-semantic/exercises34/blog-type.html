@@ -1,26 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elementos block e inline/title>
-  <link rel="stylesheet" href="./css/blog-type-style.css">
-</head>
-<body>
-  <header>Cabeçalho</header>
-  <nav>Links de navegação</nav>
-  <main>
-    <div class="article-wrapper">
-    <article>
-      <header><h1>The standard Lorem Ipsum passage, used since the 1500s</h1></header>
-      <section>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
-      <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
-    </article>
-    <aside>Seção Lateral</aside>
-    </div>
-  </main>
-  <footer>Rodapé</footer>
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos block e inline</title>
+    <link rel="stylesheet" href="./css/blog-type-style.css" />
+  </head>
+  <body>
+    <header class="header-main">Cabeçalho</header>
+    <nav class="nav-main">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </nav>
+    <main id="main-wrapper">
+      <div class="article-wrapper">
+        <article class="article-main">
+            <h1>The standard Lorem Ipsum passage, used since the 1500s</h1>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </section>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </section>
+          <section>
+            <h2>Elementos inline-block</h2>
+          </section>
+        </article>
+        <aside>Seção Lateral</aside>
+      </div>
+    </main>
+    <footer>Rodapé</footer>
+  </body>
 </html>
