@@ -1,4 +1,4 @@
-h1 {
+h1, h2, h3, ul {
   text-align: center;
 }
 
@@ -24,4 +24,14 @@ h1 {
   height: 50px;
   text-align: center;
   width: 300px;
+}
+
+.premiacoes ul li, ul li.second, ul li.third {
+  list-style: none;
+  display: inline-block;
+}
+
+ul li.first {
+  list-style: none;
+  margin: auto;
 }
