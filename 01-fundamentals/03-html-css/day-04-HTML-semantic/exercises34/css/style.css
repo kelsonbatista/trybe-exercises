@@ -6,10 +6,6 @@ body {
   padding: 0;
 }
 
-article, header {
-  /*border: 2px solid blue;*/
-}
-
 .secao1, .secao2, .secao3 {
   /*border: 2px solid red;*/
   padding: 40px;
