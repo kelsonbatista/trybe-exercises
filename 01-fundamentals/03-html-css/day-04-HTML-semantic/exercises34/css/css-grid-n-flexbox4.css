@@ -1,0 +1,71 @@
+
+/* EXEMPLO CSS GRID 3  */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  background-color: #1d1e20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+img {
+  max-width: 100%; /* a imagem pode ocupar 100% do tamanho do container que ela se encontra ou da propria img*/
+  display: block;
+}
+
+.section-grid3 {
+  display: grid;
+  grid-template-columns: 1fr 200px; /* a unidade fr é fracional , a primeira parte pode expandir ou diminuir mas o sidebar fica fico 200px*/
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  grid-gap: 20px;
+}
+
+.sidebar div {
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width:600px) {
+
+  .section-grid3 {
+    grid-template-columns: 1fr; 
+  }
+
+  .sidebar {
+    display: flex;
+    overflow: scroll;
+  }
+
+  .sidebar div {
+    flex: 1 0 200px;
+    margin: 0 10px;
+  }
+}
