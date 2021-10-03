@@ -1,0 +1,48 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  background-color: #1d1e20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+img {
+  max-width: 100%; /* a imagem pode ocupar 100% do tamanho do container que ela se encontra ou da propria img*/
+  display: block;
+}
+
+.section-flex {
+  display: flex;
+  flex-wrap: wrap; /* Confirma que o bloco pode quebrar*/
+  max-width: 800px; /* Cria um container de no maximo 800px*/
+  margin: 0 auto; /* ao chegar em 800px ele centraliza o bloco*/
+}
+
+.section-flex div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
