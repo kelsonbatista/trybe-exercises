@@ -17,3 +17,30 @@ h1, h2, h3, h4 {
   line-height: 36px;
   margin-bottom: 60px;
 }
+
+#main-title {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: -1px;
+  color: red;
+}
+
+.testimonial-name {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.button {
+  background-color: #11a36a;
+  color: white;
+  text-decoration: none;
+  padding: 20px 50px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 50px;
+}
