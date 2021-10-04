@@ -1,0 +1,19 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, ul li {
+  color: #475550;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  color: #11a36a;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 60px;
+}
