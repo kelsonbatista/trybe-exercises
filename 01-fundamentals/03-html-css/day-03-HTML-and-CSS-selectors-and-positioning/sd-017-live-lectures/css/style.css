@@ -73,3 +73,21 @@ h1, h2, h3, h4 {
 .picture {
   border-radius: 50%;
 }
+
+.student-testimonial {
+  padding: 30px 70px 90px 70px;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+.student-content {
+  width: 30%;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.student-content p {
+  margin: 0 10px;
+}
