@@ -91,3 +91,23 @@ h1, h2, h3, h4 {
 .student-content p {
   margin: 0 10px;
 }
+
+.learning {
+  padding: 30px 70px;
+  background-color: lightgrey;
+  min-height: 350px;
+}
+
+.learning li {
+  margin-bottom: 30px;
+  list-style-type: square;
+}
+
+.learning-left {
+  float: left;
+  max-width: 35%;
+}
+
+.learning-right {
+  float: right;
+}
