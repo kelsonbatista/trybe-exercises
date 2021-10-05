@@ -111,3 +111,12 @@ h1, h2, h3, h4 {
 .learning-right {
   float: right;
 }
+
+footer {
+  text-align: center;
+  padding: 40px;
+}
+
+footer a {
+  
+}
