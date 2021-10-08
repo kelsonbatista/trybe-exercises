@@ -17,16 +17,16 @@ Trybe is a web development school focused on professional success of its student
 
 - [x] 2.1 - Git & Github - What is and use
 - [x] 2.2 - Git & Github - Understanding commands
-- [ ] 2.3 - Internet - Understanding how it works
+- [x] 2.3 - Internet - Understanding how it works
 
 **Block 03 - [Introduction to HTML and CSS](https://github.com/kelsonbatista/trybe-exercises/tree/main/01-fundamentals/03-html-css)**
 
-- [ ] 3.1 - Introduction to HTML and CSS
-- [ ] 3.1 - HTML and CSS - Page structure
-- [ ] 3.2 - HTML and CSS - First steps with CSS
-- [ ] 3.3 - HTML and CSS - Selectors and positioning
-- [ ] 3.4 - Semantic HTML
-- [ ] 3.5 - Project - Lessons Learned
+- [x] 3.1 - Introduction to HTML and CSS
+- [x] 3.1 - HTML and CSS - Page structure
+- [x] 3.2 - HTML and CSS - First steps with CSS
+- [x] 3.3 - HTML and CSS - Selectors and positioning
+- [x] 3.4 - Semantic HTML
+- [x] 3.5 - Project - Lessons Learned
 
 **Block 04 - [Javascript and Programming Logic](https://github.com/kelsonbatista/trybe-exercises/tree/main/01-fundamentals/04-javascript-n-logic)**
 
