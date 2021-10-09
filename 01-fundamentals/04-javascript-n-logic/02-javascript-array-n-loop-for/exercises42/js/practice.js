@@ -1,9 +1,9 @@
 
-let taskList = [
-  'Tomar café',
-  'Reunião',
-  'Brincar com o cachorro',
-];
+// let taskList = [
+//   'Tomar café',
+//   'Reunião',
+//   'Brincar com o cachorro',
+// ];
 
 //console.log(taskList.length);
 
@@ -16,6 +16,6 @@ let taskList = [
 //taskList.push('Fazer exercicios da Trybe');
 //taskList.unshift('Escovar dentes');
 //console.log(taskList);
-let indexOfTask = taskList.indexOf('Reunião');
-console.log(indexOfTask);
+// let indexOfTask = taskList.indexOf('Reunião');
+// console.log(indexOfTask);
 
