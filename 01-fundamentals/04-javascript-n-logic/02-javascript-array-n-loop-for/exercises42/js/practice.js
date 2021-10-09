@@ -22,8 +22,32 @@
 
 //Praticar FOR
 
-let cars = ['Saab', 'Volvo', 'BMW'];
+// let cars = ['Saab', 'Volvo', 'BMW'];
 
-for (let i = 0; i < cars.length; i += 1) {
-  console.log(cars[i]);
+// for (let i = 0; i < cars.length; i += 1) {
+//   console.log(cars[i]);
+// }
+
+
+
+//FOR/OF
+// let numeros = [1,2,3,4,5];
+// for(let num of numeros) {
+//   console.log(num);
+// }
+
+
+// let word = 'Hello World!';
+// for (let letter of word) {
+//   console.log(letter);
+// }
+
+
+//Somando valores
+let numbers = [10, 21, 33, 45];
+for (let sum of numbers) {
+  sum += 1;
+  console.log(sum);
 }
+console.log(numbers);
+
