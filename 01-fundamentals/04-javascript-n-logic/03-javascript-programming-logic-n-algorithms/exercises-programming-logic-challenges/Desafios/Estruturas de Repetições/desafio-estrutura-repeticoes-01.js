@@ -18,10 +18,11 @@ Saída:
 function encode(string){
   let newString = '';
   // for (let i in string)
-  for (let i = 0; i <= string; i++) {
+  for (let i = 0; i <= string.length; i++) {
     newString += i * 3;
   }
   return newString;
 }
-console.log(newString);
+
+encode(Trybe);
 module.exports = encode;
