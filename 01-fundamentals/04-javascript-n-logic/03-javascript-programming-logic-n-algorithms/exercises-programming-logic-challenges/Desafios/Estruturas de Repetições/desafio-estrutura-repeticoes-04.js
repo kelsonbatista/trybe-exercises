@@ -16,6 +16,10 @@ Saída:
 */
 
 function repeatName(name, quantity) {
+  let verificar = "";
+  for (let i = 0 ; i <= quantity; i++) {
+
+  }
   // Desenvolva seu código nessa função
 }
 
