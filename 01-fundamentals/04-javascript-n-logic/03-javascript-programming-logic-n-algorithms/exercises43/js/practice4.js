@@ -2,8 +2,7 @@
 // Item 4
 // anterior: fazer uma piramide, com n de base (central)
 
-let n = 5;
-let j = 4;
+
 // for (let i = 0; i < n; i += 1) {
   // console.log('*'.repeat(n));
 // }
@@ -14,6 +13,9 @@ let j = 4;
     // j -= 1;
   // }
 // }
+
+let n = 5;
+let j = 4;
 
 for (let i = 0; i < n; i += 1) {
   // for (let j = n; j > 0; j -= 1) {
