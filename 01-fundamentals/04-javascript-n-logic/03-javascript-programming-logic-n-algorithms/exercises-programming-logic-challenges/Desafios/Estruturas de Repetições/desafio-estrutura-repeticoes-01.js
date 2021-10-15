@@ -18,11 +18,15 @@ Saída:
 function encode(string){
   let newString = '';
   // for (let i in string)
-  for (let i = 0; i <= string.length; i++) {
+  // for (let i = 0; i < string.length; i++) {
+  for (let i in string) {
     newString += i * 3;
+    // console.log(newString);
   }
   return newString;
+  // console.log(newString);
 }
 
-encode(Trybe);
+encode('Trybe');
+
 module.exports = encode;
