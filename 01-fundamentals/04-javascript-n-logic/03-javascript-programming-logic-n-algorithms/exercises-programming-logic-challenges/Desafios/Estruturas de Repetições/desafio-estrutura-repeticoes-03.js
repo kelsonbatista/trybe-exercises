@@ -11,6 +11,11 @@ Escreva um algoritmo que calcule a soma de 1 a 1000 usando a estrutura "for" e r
 
 function accumulatorThousand(){
   // Desenvolva seu código nessa função
+  let sumThousand = 0;
+  for (let i=1; i <= 1000; i++) {
+    sumThousand += i;
+  }
+  return(`A soma de 1 a 1000 é: ${sumThousand}.`);
 }
 
 module.exports = accumulatorThousand;
