@@ -16,11 +16,11 @@ Considerando a mesma lógica, escreva um algoritmo que irá somar todos números
 
 function accumulator(limit) {
   // Desenvolva seu código nessa função
-	let sum = 0;
+	let sumValues = 0;
 	for (let i in limit) {
-		sum += i;
+		sumValues += i;
 	}
-	// return sum;
+	return sumValues;
 	// console.log(sum);
 }
 accumulator(5);
