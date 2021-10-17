@@ -13,6 +13,12 @@ x, y, z ...n.
 
 function sortDec(){
   // Desenvolva seu código nessa função
+  let numbers = '';
+  for(let i = 200; i >= 100; i--) {
+    numbers += i + ', ';
+  }
+  let remove = numbers.substr(0,numbers.length-2)  + '.'; 
+  return remove;
 }
-
+console.log(sortDec());
 module.exports = sortDec;

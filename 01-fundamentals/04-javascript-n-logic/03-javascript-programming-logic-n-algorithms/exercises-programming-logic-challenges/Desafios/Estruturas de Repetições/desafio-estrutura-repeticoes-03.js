@@ -15,7 +15,9 @@ function accumulatorThousand(){
   for (let i=1; i <= 1000; i++) {
     sumThousand += i;
   }
-  return(`A soma de 1 a 1000 é: ${sumThousand}.`);
+  return(`A soma de 1 até 1000 é ${sumThousand}.`);
 }
+
+console.log(accumulatorThousand());
 
 module.exports = accumulatorThousand;

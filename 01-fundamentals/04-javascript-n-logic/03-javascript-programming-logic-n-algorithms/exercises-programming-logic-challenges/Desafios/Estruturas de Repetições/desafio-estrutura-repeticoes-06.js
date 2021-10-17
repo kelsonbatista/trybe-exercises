@@ -15,6 +15,15 @@ Use a seguinte estrutura no retorno:
 
 function oddNumbers(){
   // Desenvolva seu código nessa função
+  let odd = '';
+
+  for(let i = 1; i <= 50; i++) {
+    if((i-1)%2 === 0) odd += i + ', ';
+  }
+  remove = odd.substr(0,odd.length-2);
+  remove += '.';
+  return remove;
 }
 
+console.log(oddNumbers());
 module.exports = oddNumbers;

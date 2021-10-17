@@ -19,6 +19,16 @@ Obs: Não utilize o includes, você deve encontrar os valores utilizando 2 for's
 
 function includesArrays(a, b){
   // Desenvolva seu código nessa função
+
+  let count = [];
+
+  for(let i of a) {
+    for(let j of b) {
+      if(i === j) count.push(i);
+    }
+  }
+  return count;
 }
 
+console.log(includesArrays([1, 2, 4, 5, 6], [3, 9, 8, 5, 0, 2]));
 module.exports = includesArrays;

@@ -17,10 +17,18 @@ Saída:
 
 function repeatName(name, quantity) {
   let verificar = "";
-  for (let i = 0 ; i <= quantity; i++) {
-
+  for (let i = 1 ; i <= quantity; i++) {
+    if (i === quantity) {
+    verificar += name;
+    } else {
+      verificar += name + ', ';
+    }
   }
+  verificar += '.';
+  return verificar;
   // Desenvolva seu código nessa função
 }
+
+console.log(repeatName('Jose', 5))
 
 module.exports = repeatName;

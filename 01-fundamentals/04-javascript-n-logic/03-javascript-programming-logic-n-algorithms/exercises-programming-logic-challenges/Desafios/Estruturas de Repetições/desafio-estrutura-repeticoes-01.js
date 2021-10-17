@@ -27,6 +27,6 @@ function encode(string){
   // console.log(newString);
 }
 
-encode('Trybe');
+console.log(encode('Trybe'));
 
 module.exports = encode;
