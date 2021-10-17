@@ -2,6 +2,7 @@
 // resumo de comandos
 
 let fruits = ['Maçã', 'Laranja', 'Kiwi', 'Morango', 'Pera'];
+let fruitsList = { morango: 0, banana: 10, limao: 3};
 
 // TOTAL DE ITENS DO ARRAY
 console.log(fruits.length); //resp 5
@@ -34,3 +35,12 @@ for(let i in fruits) {
 }
 console.log('-------------------------------------');
 
+for(let i in fruitsList) {
+  console.log(i);
+  console.log(fruitsList[i]);
+}
+console.log('-------------------------------------');
+// for(let i of fruitsList) {
+//   console.log(i);
+//   console.log(fruitsList[i]);
+// }
