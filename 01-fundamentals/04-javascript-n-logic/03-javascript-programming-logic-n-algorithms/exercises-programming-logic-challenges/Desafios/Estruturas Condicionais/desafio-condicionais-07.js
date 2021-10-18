@@ -20,6 +20,10 @@ Bônus: Crie a condição utilizando O Operador Ternário.
 
 function legalAge(age){
   // Desenvolva seu código nessa função
-}
 
+  let maioridade = (age >=18 ? 'A pessoa é maior de idade.' : 'A pessoa é menor de idade.');
+  return maioridade;
+ 
+}
+console.log(legalAge(17))
 module.exports = legalAge;

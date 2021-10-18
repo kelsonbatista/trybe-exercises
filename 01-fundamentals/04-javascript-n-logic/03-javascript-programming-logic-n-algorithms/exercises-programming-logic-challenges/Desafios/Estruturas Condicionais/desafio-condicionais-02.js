@@ -41,6 +41,15 @@ function studentSituation(studentNote) {
 
 function studentSituation(studentNote){
   // Desenvolva seu código nessa função
-}
 
+  let sn = studentNote;
+  if (sn <= 10) return 'PÉSSIMO';
+  else if ((sn >= 11) && (sn <= 30)) return 'RUIM';
+  else if ((sn >= 31) && (sn <= 50)) return 'REGULAR';
+  else if ((sn >= 51) && (sn <= 70)) return 'MEDIANO';
+  else if ((sn >= 71) && (sn <= 90)) return 'ÓTIMO';
+  else return 'EXCELENTE';
+
+}
+console.log(studentSituation(67))
 module.exports = studentSituation;

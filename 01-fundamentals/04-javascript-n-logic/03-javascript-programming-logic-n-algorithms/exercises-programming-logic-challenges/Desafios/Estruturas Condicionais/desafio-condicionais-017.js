@@ -35,6 +35,21 @@ Caso o contrário retorne:
 
 function oddOreEven(lucioFingers, anaFingers, even){
   // Desenvolva seu código nessa função
+  let message = '';
+  if(even === 1) {
+    if((lucioFingers + anaFingers)%2 === 0) {
+      message = 'Lúcio venceu';
+    } else {
+      message = 'Ana venceu';
+    }
+  } else {
+    if((lucioFingers + anaFingers)%2 === 0) {
+      message = 'Ana venceu';
+    } else {
+      message = 'Lúcio venceu';
+    }
+  }
+  return message;
 }
-
+console.log(oddOreEven(2, 3, 0))
 module.exports = oddOreEven;

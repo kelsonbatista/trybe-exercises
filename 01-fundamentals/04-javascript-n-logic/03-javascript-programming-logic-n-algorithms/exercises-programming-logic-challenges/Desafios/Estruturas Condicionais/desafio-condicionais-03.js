@@ -26,6 +26,19 @@ Caso o nome informado não faça parte do esquadrão, retorne:
 
 function findAdventurous(adventurous){
   // Desenvolva seu código nessa função
-}
 
+  let advName = adventurous.toLowerCase();
+
+  switch(advName) {
+    case 'tunico': return 'Mestre dos Magos';
+    case 'cremoso': return 'Cavaleiro Negro';
+    case 'gordinho': return 'Pirata';
+    case 'lobo solitário': return 'Samurai';
+    case 'ousado': return 'Mago';
+    case 'anjo loiro': return 'Clérigo';
+    default: return 'Aventureiro não encontrado';
+  }
+
+}
+console.log(findAdventurous('Gordinho'));
 module.exports = findAdventurous;

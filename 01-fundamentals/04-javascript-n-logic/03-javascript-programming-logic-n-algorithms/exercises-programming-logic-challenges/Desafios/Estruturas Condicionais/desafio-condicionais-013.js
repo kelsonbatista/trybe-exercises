@@ -23,5 +23,5 @@ E retorne uma mensagem com pontuação de cada enxadrista após a partida no seg
 function chessRating(ratingPlayOne,ratingPlayTwo){
   // Desenvolva seu código nessa função
 }
-
+console.log(chessRating(1600, 1800))
 module.exports = chessRating;

@@ -28,7 +28,19 @@ Retorne a resultado no seguinte formato:
 
 function IMC(weight, height){
   // Desenvolva seu código nessa função
+  let imc = (weight / (height * height)).toFixed(1);
+  let message = '';
+  if (imc < 18.5) {
+    message = `Seu IMC é: ${imc} kg/m2. O Resultado foi: Magreza`;
+  } else if ((imc >= 18.5) && (imc <= 24.9)) {
+    message = `Seu IMC é: ${imc} kg/m2. O Resultado foi: Normal`;
+  } else if ((imc >= 25) && (imc <= 30)) {
+    message = `Seu IMC é: ${imc} kg/m2. O Resultado foi: Sobrepeso`;
+  } else {
+    message = `Seu IMC é: ${imc} kg/m2. O Resultado foi: Obesidade`;
+  }
+  return message;
 }
-
+console.log(IMC(50,1.75))
 module.exports = IMC;3
 

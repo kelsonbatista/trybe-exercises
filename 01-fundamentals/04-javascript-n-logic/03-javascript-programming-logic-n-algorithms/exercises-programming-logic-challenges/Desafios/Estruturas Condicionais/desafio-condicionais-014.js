@@ -34,6 +34,17 @@ Se estiver tudo certo com o valor do saque, subtraia o valor do saldo e retorne 
 
 function ATM(balance, withdrew){
   // Desenvolva seu código nessa função
+  let message = '';
+  if((withdrew === 0) || (typeof withdrew != 'number')) {
+    message = 'Valor de saldo inválido';
+  } else if (withdrew > balance) {
+    message = 'Saldo insuficiente';
+  } else if ((withdrew%10 != 0) || (withdrew%50 != 10) || (withdrew%100 != 10)) {
+    message = 'Valor inválido para as notas disponíveis: R$10, R$50, R$100'
+  } else {
+    message = 'Saque efetuado! Novo saldo: R$' + (balance - withdrew);
+  }
+  return message;
 }
-
+console.log(ATM(200,54));
 module.exports = ATM;

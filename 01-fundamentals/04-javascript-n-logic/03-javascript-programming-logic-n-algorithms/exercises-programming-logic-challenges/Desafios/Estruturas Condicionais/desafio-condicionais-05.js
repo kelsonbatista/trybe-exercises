@@ -29,8 +29,14 @@ Caso contrário retorne:
 
 */
 
-function robotFriend(mon, dad, me, brother, sister){
+function robotFriend(mom, dad, me, brother, sister){
   // Desenvolva seu código nessa função
-}
 
+  if((me || mom || dad) || (brother && sister)) {
+    return "Things I do for love...";
+  } else {
+    return "Not today.";
+  }
+}
+console.log(robotFriend(false, false, false, true, true))
 module.exports = robotFriend;

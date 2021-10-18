@@ -36,6 +36,21 @@ Caso a pessoa não tenha conseguido entregar o projeto retorne:
 
 function evaluateProject(obj){
   // Desenvolva seu código nessa função
+  let message = '';
+  let completedReqs = ((obj.completed/obj.reqs) * 100);
+  let completedAllReqs = ((obj.completed/obj.allReqs) * 100);
+  if(obj.rec) {
+    if(completedAllReqs >= 90) {
+      message = 'Parabéns, você está aprovado(a)!';
+    } else {
+      message = 'Você ainda precisa entregar mais requisitos ;)';
+    }
+  } else if (completedReqs >= 80) {
+      message = 'Parabéns, você está aprovado(a)!';
+  } else {
+      message = 'Você ainda precisa entregar mais requisitos ;)';
+  }
+  return message;
 }
-
+console.log(evaluateProject({rec: true, reqs: 80, allReqs: 100, completed: 90}))
 module.exports = evaluateProject;

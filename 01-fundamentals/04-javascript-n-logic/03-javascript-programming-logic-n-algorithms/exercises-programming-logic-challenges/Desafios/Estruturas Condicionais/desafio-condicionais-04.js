@@ -1,22 +1,14 @@
 /*
 
 04 - Dinossauro poliglota
-
 Fernando tem um dinossauro muito esperto.
-
 Quando está com as duas pernas no chão, o dinossauro fala em português.
-
 Quando levanta a perna esquerda, fala em inglês.
-
 Por fim, quando levanta a perna direita fala em francês.
-
 Jackson, amigo de Fernando, ficou fascinado com o animal.
-
 Em sua emoção perguntou: “E quando ele levanta as duas?”.
 Antes que Fernando pudesse responder, o dinossauro gritou: “Ai eu caio, né tio Jack!!”.
-
 Escreva um algoritmo que recebe uma string por parâmetro, que contém a situação de levantamento das pernas do dinossauro, e retorne o idioma em que ele irá falar.
-
 Use a tabela abaixo para te auxiliar:
 
 |  Exemplo de entrata  |  'Exemplo de saída  |
@@ -35,6 +27,15 @@ Caso o comando não for reconhecido, retorne:
 
 function polyglotDinosaur(command){
   // Desenvolva seu código nessa função
-}
 
+  switch(command) {
+    case 'esquerda': return 'english';
+    case 'direita': return 'français';
+    case 'nenhuma': return 'português';
+    case 'as duas': return 'Ai eu caiu, né!!';
+    default: return 'Comando desconhecido.';
+  }
+
+}
+console.log(polyglotDinosaur('Xablau'));
 module.exports = polyglotDinosaur;
