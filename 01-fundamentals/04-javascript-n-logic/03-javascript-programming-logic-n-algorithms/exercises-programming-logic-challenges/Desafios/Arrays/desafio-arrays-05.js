@@ -16,8 +16,26 @@ A saída deve ter o seguinte formato:
 */
 
 function findOldestSon(pedroAge, kidsAge){
-  // Desenvolva seu código aqui.
-  return // Retorne o resultado aqui
-}
+  
+  let oldest = 0;
+  let sum = 0;
+  let last = 0;
 
+  for(let i = 0; i < kidsAge.length-1; i++) {
+    if(kidsAge[i+1] > kidsAge[i]) {
+      oldest = kidsAge[i+1];
+    } else {
+      oldest = kidsAge[i];
+    }
+    sum += kidsAge[i];
+    last = kidsAge[kidsAge.length];
+  }
+  sum += last;
+  if(sum === pedroAge) {
+    return `O filho mais velho tem ${oldest} anos.`
+  } else {
+    return 'Idade dos filhos errada.';
+  }
+}
+console.log(findOldestSon(44,[10,12,22]))
 module.exports = findOldestSon;

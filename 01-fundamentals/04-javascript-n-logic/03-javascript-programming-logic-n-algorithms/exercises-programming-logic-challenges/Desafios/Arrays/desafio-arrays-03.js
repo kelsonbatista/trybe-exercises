@@ -18,7 +18,16 @@ Caso o contrário:
 
 function findGuest(names, guest){
   // Desenvolva seu código nessa função
-  return // Retorne o resultado aqui
+  let message = '';
+  for(let i = 0; i < names.length; i++) {
+    if(guest === names[i]) {
+      message = 'O nome está na lista.';
+      break;
+    } else { 
+      message = 'O nome não está na lista.'
+    }
+  }
+  return message;
 }
-
+console.log(findGuest(['Joao', 'Maria', 'Jose', 'Roberto', 'Marcos'], 'Joseph'))
 module.exports = findGuest;

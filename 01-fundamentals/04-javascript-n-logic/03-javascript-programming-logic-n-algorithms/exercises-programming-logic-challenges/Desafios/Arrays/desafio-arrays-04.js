@@ -20,7 +20,14 @@ Obs: Os retornos tem que ser dados do tipo boolean.
 
 function dataType(types){
   // Desenvolva seu código aqui.
-  return // Retorne o resultado aqui
+  let firstItem = types[0];
+  for (let i = 0; i < types.length-1; i++) {
+    if (typeof types[i+1] == typeof types[i]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
-
+console.log(dataType(['texto', 'true', '10']))
 module.exports = dataType;
