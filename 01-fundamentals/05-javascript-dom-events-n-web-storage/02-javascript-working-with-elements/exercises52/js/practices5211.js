@@ -19,5 +19,8 @@ let section2 = document.createElement('section');
 section2.className = 'left-content';
 document.querySelector('.main-content').appendChild(section2);
 
+let section3 = document.createElement('section');
+section3.className = 'right-content';
+document.querySelector('.main-content').appendChild(section3);
 
 
