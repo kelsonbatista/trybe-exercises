@@ -138,14 +138,14 @@ function zoomNumber() {
 zoomNumber();
 
 // EXERCICIO 7
-function addTasks(tarefa){
+function myTasks(tarefa){
   let listTasks = document.querySelector('.my-tasks');
   let theTask = document.createElement('span');
   theTask.innerText = tarefa;
   listTasks.appendChild(theTask);
 }
 
-addTasks('cozinhar');
+myTasks('cozinhar');
 
 //EXERCICIO 8
 function setColor(color) {
@@ -158,4 +158,19 @@ function setColor(color) {
 
 setColor('orange');
 
+// EXERCICIO 9
+function selectTask(){
+  let taskDiv = document.querySelector('.task');
+  taskDiv.addEventListener('click', function() {
+    if(this.className !== 'task selected') {
+      this.className = 'task selected';
+      this.previousElementSibling.style.fontWeight = 700;
+    } else {
+      this.className = 'task';
+      this.previousElementSibling.style.fontWeight = 400;
+    }
+  });
+}
+
+selectTask();
 
