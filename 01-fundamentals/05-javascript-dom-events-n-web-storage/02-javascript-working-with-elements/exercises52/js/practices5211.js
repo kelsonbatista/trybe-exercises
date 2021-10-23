@@ -44,4 +44,10 @@ for (let i = 1; i <= 3; i += 1) {
 }
 
 h1.className = 'title';
-h3.className = 'description';
+
+let h3All = document.querySelectorAll('h3');
+h3All.className = 'description';
+
+
+
+
