@@ -53,4 +53,5 @@ let mainElement = document.querySelector('.main-content');
 // let mainChildren = mainElement.childNodes;
 mainElement.removeChild(sectionLeft[0]);
 
-
+let sectionRight = document.getElementsByClassName('right-content');
+sectionRight[0].style.marginRight = 'auto';
