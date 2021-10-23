@@ -147,4 +147,15 @@ function addTasks(tarefa){
 
 addTasks('cozinhar');
 
+//EXERCICIO 8
+function setColor(color) {
+  let listTasks = document.querySelector('.my-tasks');
+  let colorDiv = document.createElement('div');
+  colorDiv.style.backgroundColor = color;
+  colorDiv.className = 'task';
+  listTasks.appendChild(colorDiv);
+}
+
+setColor('orange');
+
 
