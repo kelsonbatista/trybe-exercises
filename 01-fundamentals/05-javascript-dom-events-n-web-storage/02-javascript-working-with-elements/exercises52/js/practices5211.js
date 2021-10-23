@@ -42,3 +42,6 @@ for (let i = 1; i <= 3; i += 1) {
   h3.innerText = 'Elemento h3 - ' + i;
   document.querySelector('.main-content').appendChild(h3);
 }
+
+h1.className = 'title';
+
