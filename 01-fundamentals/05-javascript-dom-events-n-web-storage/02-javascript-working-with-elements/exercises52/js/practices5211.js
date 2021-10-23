@@ -11,5 +11,9 @@ let section = document.createElement('section');
 section.className = 'center-content';
 document.querySelector('.main-content').appendChild(section);
 
+let p = document.createElement('p');
+p.innerHTML = 'Esse é um parágrafo';
+document.querySelector('.center-content').appendChild(p);
+
 
 
