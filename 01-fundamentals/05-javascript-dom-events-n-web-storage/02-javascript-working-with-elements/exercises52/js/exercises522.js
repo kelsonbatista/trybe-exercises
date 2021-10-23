@@ -43,10 +43,16 @@ elementoOnde.firstElementChild.appendChild(netoOnde);
 document.querySelector('#filhoDoFilhoOnde').parentElement.parentElement.nextElementSibling.textContent += ' Texto inserido a partir do Neto do Onde';
 
 //remover todos os elementos do pai, exceto o pai/ onde e primeiro filho do filho
+//seleciona o pai
 let elementoPai = document.querySelector('#pai');
 // elementoPai.firstElementChild.remove();
-let children = elementoPai.childNodes;
-
-for (let i = 0; i < children.length; i += 1) {
-  children[i].id.remove();
+//seleciona os filhos
+let childrenPai = elementoPai.childNodes;
+//remove filhos especificos
+for (let i = childrenPai.length-1; i >= 0 ; i -= 1) {
+  if(childrenPai[i].id !== 'elementoOndeVoceEsta') {
+    elementoPai.removeChild(childrenPai[i]);
+  }
 }
+//remover o segundo filho
+document.querySelector('#segundoEUltimoFilhoDoFilho').remove();
