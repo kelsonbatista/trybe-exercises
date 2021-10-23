@@ -29,7 +29,7 @@ function createDays() {
     dezDaysList.push(i);
   }
 
-  for(let i = 1; i <= dezDaysList.length; i += 1) {
+  for(let i = 1; i < dezDaysList.length-1; i += 1) {
     let li = document.createElement('li');
     
     if (i === 24 || i === 31) {
@@ -61,4 +61,24 @@ function btnFeriados(feriados) {
 }
 
 btnFeriados();
+
+// EXERCICIO 3 
+function isHoliday(){
+
+    let btnHoliday = document.querySelector('#btn-holiday');
+    let listHoliday = document.querySelectorAll('.holiday');
+
+    btnHoliday.addEventListener('click', function () {
+      for (let i = 0; i < listHoliday.length; i += 1) {
+        if (listHoliday[i].style.backgroundColor === 'yellow') {
+          listHoliday[i].style.backgroundColor = 'rgb(238,238,238)';
+        } else {
+          listHoliday[i].style.backgroundColor = 'yellow';
+        }
+      }
+    });
+
+}
+
+isHoliday();
 
