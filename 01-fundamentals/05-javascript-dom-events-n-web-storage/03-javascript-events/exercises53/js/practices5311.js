@@ -137,4 +137,14 @@ function zoomNumber() {
 
 zoomNumber();
 
+// EXERCICIO 7
+function addTasks(tarefa){
+  let listTasks = document.querySelector('.my-tasks');
+  let theTask = document.createElement('span');
+  theTask.innerText = tarefa;
+  listTasks.appendChild(theTask);
+}
+
+addTasks('cozinhar');
+
 
