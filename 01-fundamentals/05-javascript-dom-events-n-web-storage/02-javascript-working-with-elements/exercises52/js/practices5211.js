@@ -15,5 +15,9 @@ let p = document.createElement('p');
 p.innerHTML = 'Esse é um parágrafo';
 document.querySelector('.center-content').appendChild(p);
 
+let section2 = document.createElement('section');
+section2.className = 'left-content';
+document.querySelector('.main-content').appendChild(section2);
+
 
 
