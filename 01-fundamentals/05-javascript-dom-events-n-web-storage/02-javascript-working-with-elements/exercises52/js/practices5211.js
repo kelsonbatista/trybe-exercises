@@ -48,6 +48,9 @@ h1.className = 'title';
 let h3All = document.querySelectorAll('h3');
 h3All.className = 'description';
 
-
+let sectionLeft = document.getElementsByClassName('left-content');
+let mainElement = document.querySelector('.main-content');
+// let mainChildren = mainElement.childNodes;
+mainElement.removeChild(sectionLeft[0]);
 
 
