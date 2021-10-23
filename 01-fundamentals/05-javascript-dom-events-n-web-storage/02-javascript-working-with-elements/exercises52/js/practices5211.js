@@ -37,4 +37,8 @@ for(let i = 0; i < numbers.length; i += 1) {
   document.querySelector('.right-content').appendChild(li);
 }
 
-
+for (let i = 1; i <= 3; i += 1) {
+  let h3 = document.createElement('h3');  
+  h3.innerText = 'Elemento h3 - ' + i;
+  document.querySelector('.main-content').appendChild(h3);
+}
