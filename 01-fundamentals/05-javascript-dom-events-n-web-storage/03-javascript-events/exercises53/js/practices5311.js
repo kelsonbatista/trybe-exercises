@@ -115,3 +115,26 @@ function isFriday() {
 
 isFriday();
 
+
+// EXERCICIO 6
+function zoomNumber() {
+
+  let dayNumber = document.querySelectorAll('.day');
+
+  for (let i = 0; i < dayNumber.length; i += 1) {
+    dayNumber[i].addEventListener('mouseover', function(event) {
+      event.target.style.fontSize = '1.7em';
+      event.target.style.fontWeight = '700';
+    });
+
+    dayNumber[i].addEventListener('mouseout', function(event) {
+      event.target.style.fontSize = '1.3em';
+      event.target.style.fontWeight = '500';
+    });
+  }
+  
+}
+
+zoomNumber();
+
+
