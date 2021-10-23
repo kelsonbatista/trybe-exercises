@@ -29,12 +29,13 @@ img.className = 'small-image';
 document.querySelector('.left-content').appendChild(img);
 
 let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+// let rightCont = document.getElementsByClassName('right-content')[0];
 let ul = document.createElement('ul');
 
 for(let i = 0; i < numbers.length; i += 1) {
   let li = document.createElement('li');
   li.innerText = numbers[i];
-  document.querySelector('.right-content').appendChild(li);
+  document.querySelector('.right-content').appendChild(ul).appendChild(li);
 }
 
 for (let i = 1; i <= 3; i += 1) {
@@ -58,3 +59,7 @@ sectionRight[0].style.marginRight = 'auto';
 
 let firstSection = document.getElementsByClassName('center-content');
 firstSection[0].parentNode.style.backgroundColor = 'green';
+
+// let sectionRightUl = document.getElementsByTagName('ul')
+sectionRight[0].firstElementChild.lastElementChild.remove();
+sectionRight[0].firstElementChild.lastElementChild.remove();
