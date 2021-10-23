@@ -49,3 +49,16 @@ function createDays() {
 
 createDays();
   
+// EXERCICIO 2
+function btnFeriados(feriados) {
+
+  let btnFe = document.createElement('button');
+  btnFe.id = 'btn-holiday'
+  btnFe.innerText = 'Feriados';
+  let buttonsContainer = document.querySelector('.buttons-container');
+  buttonsContainer.appendChild(btnFe);
+
+}
+
+btnFeriados();
+
