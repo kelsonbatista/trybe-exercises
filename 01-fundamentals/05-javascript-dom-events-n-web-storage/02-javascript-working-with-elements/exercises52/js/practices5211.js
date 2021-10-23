@@ -28,3 +28,13 @@ img.src = 'https://picsum.photos/200';
 img.className = 'small-image';
 document.querySelector('.left-content').appendChild(img);
 
+let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+let ul = document.createElement('ul');
+
+for(let i = 0; i < numbers.length; i += 1) {
+  let li = document.createElement('li');
+  li.innerText = numbers[i];
+  document.querySelector('.right-content').appendChild(li);
+}
+
+
