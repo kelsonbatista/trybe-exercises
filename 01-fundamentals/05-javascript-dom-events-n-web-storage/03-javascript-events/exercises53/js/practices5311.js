@@ -20,28 +20,29 @@ year.innerText = '2021';
 
 
 // EXERCICIO 1
-function createDays() {
-  
-  let ulDays = document.querySelector('#days');
-  let dezDaysList = [29, 30];
+
+let dezDaysList = [29, 30];
 
   for (let i = 1; i <= 31; i += 1) {
     dezDaysList.push(i);
   }
-
-  for(let i = 1; i < dezDaysList.length-1; i += 1) {
+function createDays() {
+  
+  let ulDays = document.querySelector('#days');
+  
+  for(let i = 0; i < dezDaysList.length; i += 1) {
     let li = document.createElement('li');
-    
-    if (i === 24 || i === 31) {
+    let day = dezDaysList[i];
+    if (day === 24 || day === 31) {
       li.className = 'holiday';
-    } else if (i === 4 || i === 11 || i === 18) {
+    } else if (day === 4 || day === 11 || day === 18) {
       li.className = 'day friday';
-    } else if (i === 25) {
+    } else if (day === 25) {
       li.className = 'day friday holiday';
     } else {
       li.className = 'day';
     }
-    li.innerText = i;
+    li.innerText = day;
     ulDays.appendChild(li);
   }
   // console.log(ulDays);
@@ -93,4 +94,24 @@ function btnFriday(sextaFeira) {
 
 btnFriday();
 
+// EXERCICIO 5
+
+function isFriday() {
+  let daysFriday = [4, 11, 18, 25];
+  let btnFriday = document.querySelector('#btn-friday');
+  let listFriday = document.querySelectorAll('.friday');
+  btnFriday.addEventListener('click', function () {
+    for(let i = 0; i < listFriday.length; i += 1) {
+      // let listFridayText = listFriday[i].textContent;
+      if(listFriday[i].textContent !== 'Sextou!') {
+        listFriday[i].innerText = 'Sextou!';
+      } else {
+        listFriday[i].innerText = daysFriday[i];
+      }
+    }
+  });
+
+}
+
+isFriday();
 
