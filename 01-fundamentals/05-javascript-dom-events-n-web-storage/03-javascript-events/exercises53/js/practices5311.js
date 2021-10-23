@@ -82,3 +82,15 @@ function isHoliday(){
 
 isHoliday();
 
+// EXERCICIO 4
+function btnFriday(sextaFeira) {
+  let btnFriday = document.createElement('button');
+  btnFriday.id = 'btn-friday';
+  btnFriday.innerText = 'Friday';
+  let buttonsContainer = document.querySelector('.buttons-container');
+  buttonsContainer.appendChild(btnFriday);
+}
+
+btnFriday();
+
+
