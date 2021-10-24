@@ -1,11 +1,29 @@
 window.onload = function() {
-  let basePyramid = 9;
+
+ var answer = prompt('Please enter the triangle base size (odd number):', 9);
+
+  if (answer !== null && Number(answer) <= 29) {
+    var basePyramid = Number(answer);
+  } else {
+    var basePyramid = 9;
+  }
+
+  if(Number(answer)) {
+  
   let numberOfLines = (basePyramid + 1) / 2; // 5
   let controlLeft = numberOfLines; // 5
   let controlRight = numberOfLines; // 5
-  let lines = document.querySelectorAll(".line");
 
   updateVisit();
+
+  for(let i = 0; i < numberOfLines; i += 1) {
+    let lineDiv = document.createElement('div');
+    lineDiv.className = 'line';
+    let triangleDiv = document.querySelector('.triangle');
+    triangleDiv.appendChild(lineDiv);
+  }
+
+  let lines = document.querySelectorAll('.line');
 
   fillTriangle(lines);
   
@@ -52,5 +70,6 @@ window.onload = function() {
         divLine.appendChild(createBox("box-empty"));
       }
     }
+  }
   }
 }
