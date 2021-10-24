@@ -194,3 +194,25 @@ function dayColor(){
 }
 
 dayColor();
+
+//BONUS
+function addEvent(){
+  let btnAddEvent = document.querySelector('#btn-add');
+  let taskInput = document.querySelector('#task-input');
+  let inputContainer = document.querySelector('.task-list');
+
+  btnAddEvent.addEventListener('click', function() {
+    
+    if(taskInput.value !== '') {
+      let theEvent = document.createElement('li');
+      theEvent.className = 'event-item';
+      theEvent.innerText = taskInput.value;
+      taskInput.value = '';
+      inputContainer.appendChild(theEvent);
+    } else {
+      alert('Digite um compromisso!');
+    }
+  });
+}
+
+addEvent();
