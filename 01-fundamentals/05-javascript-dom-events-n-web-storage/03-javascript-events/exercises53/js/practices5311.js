@@ -174,3 +174,23 @@ function selectTask(){
 
 selectTask();
 
+//EXERCICIO 10
+function dayColor(){
+  let allDays = document.querySelector('#days');
+  let taskSelected = document.getElementsByClassName('task selected'); //linha gabarito
+  let taskColor = document.querySelector('.task').style.backgroundColor;
+
+  // for (let i = 0; i < dayNumber.length; i += 1) {
+    allDays.addEventListener('click', function(event) {
+      // alert(taskSelected.length);
+      if(taskSelected.length > 0 && event.target.style.color !== taskColor) {
+        event.target.style.color = taskColor;
+      } else if (taskSelected.length !== 0 && event.target.style.color === taskColor) {
+        event.target.style.color = 'rgb(119,119,119)';
+      }
+    });
+
+  // }
+}
+
+dayColor();
