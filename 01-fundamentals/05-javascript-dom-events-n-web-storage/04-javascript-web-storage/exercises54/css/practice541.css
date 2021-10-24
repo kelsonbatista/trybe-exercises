@@ -1,0 +1,49 @@
+.config {
+  background-color: black;
+  color: white;
+  position: fixed;
+  width: 100%;
+  margin-top: 0px;
+  z-index: 10;
+}
+
+.config__content {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 20px 5px;
+  width: 85%;
+  margin: auto;
+}
+
+.config__input {
+  margin-right: 25px;
+  height: 25px;
+  width: 150px;
+}
+
+.config__btnset, .config__btnrst {
+  padding: 7px 50px;
+  margin-right: 5px;
+}
+
+.mytext {
+  margin-bottom: 500px;
+}
+
+.mytext__content {
+  /* margin-top: 100px; */
+  width: 85%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.mytext__title {
+  padding: 30px 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.mytext__text {
+  padding: 20px 0;
+}
