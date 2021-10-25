@@ -8,23 +8,54 @@
 }
 
 .config__content {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content:center;
-  padding: 20px 5px;
+  justify-content:center; */
   width: 85%;
   margin: auto;
+  /* background-color: yellow; */
+}
+
+.config__block {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 20px 0px;
+  width: 100%;
+  margin: auto;
+  /* background-color: purple; */
+}
+
+.config__field {
+  display: inline-block;
+  width: 120px;
+  /* background-color: lime; */
+}
+
+.config__field-btn {
+  display: flex;
+  align-items: center;
+  justify-content:right;
+  width: 300px;
+  /* background-color: red; */
+}
+
+.config__label {
+  display: inline-block;
+  width: 120px;
+  /* background-color: orange; */
 }
 
 .config__input {
-  margin-right: 25px;
+  /* margin-right: 15px; */
   height: 25px;
-  width: 150px;
+  width: 120px;
 }
 
 .config__btnset, .config__btnrst {
   padding: 7px 50px;
-  margin-right: 5px;
+  margin-right: 10px;
+  margin-top: 14px;
 }
 
 .mytext {
@@ -32,9 +63,9 @@
 }
 
 .mytext__content {
-  /* margin-top: 100px; */
   width: 85%;
   margin: auto;
+  /* position: relative; */
   padding-top: 100px;
 }
 
@@ -46,4 +77,55 @@
 
 .mytext__text {
   padding: 20px 0;
+}
+
+@media only screen and (max-width: 1250px) {
+
+  .config__block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
+
+  .config__field {
+    display: inline-block;
+    /* margin-right: 20px; */
+  }
+
+  .config__field-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mytext__content {
+    padding-top: 160px;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  .config__block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+    margin: auto;
+    /* background-color: green; */
+  }
+
+  .config__field {
+    padding: 0px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+  .mytext__content {
+    padding-top: 300px;
+  }
 }
