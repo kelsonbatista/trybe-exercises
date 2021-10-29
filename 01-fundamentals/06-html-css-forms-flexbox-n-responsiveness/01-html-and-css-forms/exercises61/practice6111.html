@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/practice6111.css">
   <title>Login</title>
 </head>
+
 <body>
   <header>
     <section class="login">
@@ -15,14 +19,29 @@
     </section>
   </header>
   <main>
-    <section class="loginForm">
-      <div class="loginForm__content">
-        <input type="text" class="loginForm__name">
-        <input type="password" class="loginForm__password">
-        <input type="checkbox" class="loginForm__remember">
-        <button type="submit" class="loginForm__submit">Entrar</button>
+    <section class="form">
+      <div class="form__content">
+        <form action="" method="get" enctype="multipart/form-data">
+          <div class="form__item">
+            <label for="form__email" class="form__label email">Email</label>
+            <input type="text" class="form__input" id="form__email" placeholder="Type your email" required
+              autocomplete="off" autofocus>
+          </div>
+          <div class="form__item">
+            <label for="form__password" class="form__label password">Password</label>
+            <input type="password" class="form__input" id="form__password" placeholder="Type your password" required>
+          </div>
+          <div class="form__item">
+            <label for="form__remember" class="form__label remember">Remember me</label>
+            <input type="checkbox" class="form__checkbox" id="form__remember">
+          </div>
+          <div class="form__item">
+            <button type="submit" class="form__submit submit" id="form__submit">Submit</button>
+          </div>
       </div>
+      </form>
     </section>
   </main>
 </body>
+
 </html>
