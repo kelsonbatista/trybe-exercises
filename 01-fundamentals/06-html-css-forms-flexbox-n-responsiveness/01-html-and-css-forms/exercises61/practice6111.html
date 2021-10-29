@@ -23,20 +23,23 @@
       <div class="form__content">
         <form action="" method="get" enctype="multipart/form-data">
           <div class="form__item">
-            <label for="form__email" class="form__label email">Email</label>
-            <input type="text" class="form__input" id="form__email" placeholder="Type your email" required
+            <label for="form__email" class="form__label email">Email
+              <input type="text" name="email" class="form__input" id="form__email" placeholder="Type your email" required
               autocomplete="off" autofocus>
+            </label>
           </div>
           <div class="form__item">
-            <label for="form__password" class="form__label password">Password</label>
-            <input type="password" class="form__input" id="form__password" placeholder="Type your password" required>
+            <label for="form__password" class="form__label password">Password
+              <input type="password" name="password" class="form__input" id="form__password" placeholder="Type your password" required>
+            </label>            
           </div>
           <div class="form__item">
-            <label for="form__remember" class="form__label remember">Remember me</label>
-            <input type="checkbox" class="form__checkbox" id="form__remember">
+            <label for="form__remember" class="form__label remember">Remember me
+              <input type="checkbox" name="remember" class="form__checkbox" id="form__remember">
+            </label>
           </div>
           <div class="form__item">
-            <button type="submit" class="form__submit submit" id="form__submit">Submit</button>
+            <button type="submit" name="submit" class="form__submit submit" id="form__submit">Submit</button>
           </div>
       </div>
       </form>
