@@ -19,11 +19,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // JUST VALIDATE
-new window.JustValidate('.js-form', {
+new window.JustValidate('.form', {
   rules: {
+    name: {
+      required: true,
+      maxLength: 40,
+      minLength: 5,
+    },
     email: {
       required: true,
       email: true,
+      maxLength: 50,
+      minLength: 5,
       remote: {
           url: 'https://just-validate-api.herokuapp.com/check-correct',
           sendParam: 'email',
@@ -31,25 +38,104 @@ new window.JustValidate('.js-form', {
           method: 'GET'
       }
     },
-    name: {
+    cpf: {
       required: true,
-      maxLength: 30,
-      minLength: 4,
+      maxLenght: 11,
+    },
+    address: {
+      required: true,
+      maxLength: 200,
+      minLength: 5,
+    },
+    city: {
+      required: true,
+      maxLength: 28,
+      minLength: 2,
+    },
+    state: {
+      required: true,
+    },
+    type: {
+      required: true,
+    },
+    summary: {
+      required: true,
+      maxLength: 1000,
+      minLength: 50,
+    },
+    role: {
+      required: true,
+      maxLength: 40,
+      minLength: 5,
+    },
+    roleDescription: {
+      required: true,
+      maxLength: 500,
+      minLength: 5,
+    },
+    startDate: {
+      required: true,
     },
   },
 
   messages: {
-    email: {
-      remote: 'Email already exist',
-      email: 'Email not valid!'
-    },
     name: {
       required: 'Digite seu nome',
-      maxLength: 'Limite excedido!',
-      minLength: 'Nome muito curto!',
+      maxLength: 'Limite excedido',
+      minLength: 'Nome muito curto',
+    },
+    email: {
+      required: 'Digite seu email',
+      remote: 'Email já existe!',
+      email: 'Digite um email válido',
+    },
+    cpf: {
+      required: 'Digite seu CPF',
+      maxLenght: 'Máximo de 11 caracteres'
+    },
+    address: {
+      required: 'Digite seu endereço',
+      maxLength: 'Limite excedido',
+      minLength: 'Necessário um mínimo de caracteres muito curto',
+    },
+    city: {
+      required: 'Digite sua cidade',
+      maxLength: 'Limite excedido',
+      minLength: 'Necessário um mínimo de caracteres muito curto',
+    },
+    state: {
+      required: 'Digite seu estado',
+    },
+    type: {
+      required: 'Selecione com o tipo'
+    },
+    summary: {
+      required: 'Digite seu resumo profissional',
+      maxLength: 'Limite excedido',
+      minLength: 'Necessário um mínimo de caracteres muito curto',
+    },
+    role: {
+      required: 'Digite seu cargo',
+      maxLength: 'Limite excedido',
+      minLength: 'Necessário um mínimo de caracteres muito curto',
+    },
+    roleDescription: {
+      required: 'Digite a descrição do cargo',
+      maxLength: 'Limite excedido',
+      minLength: 'Necessário um mínimo de caracteres muito curto',
+    },
+    startDate: {
+      required: 'Digite a data de início',
     },
   },
 
+  tooltip: {
+    fadeOutTime: 4000, // default value - 5000 
+    fadeOutClass: '.hide', // default value - 
+    selectorWrap: '.tooltip-wrapper', // default value - just-validate-tooltip-containerjust-validate-tooltip-hide
+  }
+
+  colorWrong: 'red',
   focusWrongField: true,
 
   submitHandler: function (form, values, ajax) {
