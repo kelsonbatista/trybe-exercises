@@ -40,7 +40,7 @@ new window.JustValidate('.form', {
     },
     cpf: {
       required: true,
-      maxLenght: 11,
+      maxLength: 11,
     },
     address: {
       required: true,
@@ -133,7 +133,7 @@ new window.JustValidate('.form', {
     fadeOutTime: 4000, // default value - 5000 
     fadeOutClass: '.hide', // default value - 
     selectorWrap: '.tooltip-wrapper', // default value - just-validate-tooltip-containerjust-validate-tooltip-hide
-  }
+  },
 
   colorWrong: 'red',
   focusWrongField: true,
@@ -151,7 +151,7 @@ new window.JustValidate('.form', {
               alert('AJAX submit error! \nResponse from server:' + response)
           }
       });
-  },
+    },
         
   invalidFormCallback: function (errors) {
       console.log(errors);
