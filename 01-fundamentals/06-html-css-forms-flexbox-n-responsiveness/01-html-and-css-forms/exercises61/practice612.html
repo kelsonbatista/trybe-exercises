@@ -21,40 +21,134 @@
   </header>
 
   <main>
-    <section class="form">
-      <div class="form__content">
-        <form action="" method="get" enctype="multipart/form-data">
-
-          <fieldset class="form__fieldset">
+    <form action="" method="get" enctype="multipart/form-data">
+      <section class="form personal">
+        <div class="form__content personal">
+          <fieldset class="form__fieldset personal">
             <legend>Dados pessoais</legend>
 
-            <div class="form__item">
-              <label for="" class="form__label">
-                <span>Nome</span>
-                <input type="text" class="form__input" id="form__name" name="name" placeholder="Type your name" required>
-              </label>
+            <div class="form__item personal">
+              <label for="form__name" class="form__label personal"><span>Nome</span></label>
+              <input type="text" class="form__text personal" id="form__name" name="name" placeholder="Type your name"
+                maxlength="40">
             </div>
 
-            <div class="form__item">
-              <label for="" class="form__label">
-                <span>Email</span>
-                <input type="text" class="form__input" id="form__email" name="email" placeholder="Type your email" required>
-              </label>
+            <div class="form__item personal">
+              <label for="form__email" class="form__label personal"><span>Email</span></label>
+              <input type="text" class="form__text personal" id="form__email" name="email" placeholder="Type your email"
+                maxlength="50">
+            </div>
+
+            <div class="form__item personal">
+              <label for="form__cpf" class="form__label personal"><span>CPF</span></label>
+              <input type="text" class="form__text personal" id="form__cpf" name="cpf" placeholder="Type your CPF"
+                maxlength="11">
+            </div>
+
+            <div class="form__item personal">
+              <label for="form__address" class="form__label personal"><span>Endereço</span></label>
+              <input type="text" class="form__text personal" id="form__address" name="address"
+                placeholder="Type your address" maxlength="200">
+            </div>
+
+            <div class="form__item personal">
+              <label for="form__city  personal" class="form__label  personal"><span>Cidade</span></label>
+              <input type="text" class="form__text  personal" id="form__city" name="city"
+                placeholder="Type your city" maxlength="28">
+            </div>
+
+            <div class="form__item personal">
+              <label for="form__state" class="form__label personal"><span>Estado</span></label>
+              <select type="text" class="form__select personal" id="form__state" name="state">
+              </select>
+            </div>
+
+            <div class="form__item personal">
+              <input type="radio" class="form__radio" id="form__home" name="type" value="Casa">
+              <label for="form__home" class="form__label personal"><span>Casa</span></label>
+              <input type="radio" class="form__radio" id="form__apt" name="type" value="Apartamento">
+              <label for="form__apt" class="form__label personal"><span>Apartamento</span></label>
+            </div>
+
+          </fieldset>
+        </div>
+      </section>
+
+      <!-- <section class="section">
+        <div class="div0">
+          <fieldset class="fieldset">
+            <legend>Teste</legend>
+            <div class="div1">
+              teste1
+            </div>
+            <div class="div2">
+              teste2
+            </div>
+            <div class="div3">
+              teste3
             </div>
           </fieldset>
+        </div>
+      </section> -->
 
-          <fieldset class="form__fieldset">
+      <section class="form job">
+        <div class="form__content job">
+          <fieldset class="form__fieldset job">
             <legend>Experiência profissional</legend>
-            <div class="form__item">
-              <label for="" class="form__label">
-                <input type="text" class="form__input">
-              </label>
+
+            <div class="form__item job">
+              <label for="form__summary"" class=" form__label job"><span>Resumo profissional</span></label>
+              <textarea class="form__textarea job" id="form__summary" name="summary" cols="30" rows="10"
+                maxlength="1000"></textarea>
+            </div>
+
+            <div class="form__item job">
+              <label for="form__role" class="form__label job"><span>Cargo</span></label>
+              <input type="text" class="form__text job" id="form__role" name="role" placeholder="Type your role"
+                maxlength="40">
+            </div>
+
+            <div class="form__item job">
+              <label for="form__role-description" class="form__label job"><span>Descrição do cargo</span></label>
+              <input type="text" class="form__text job" id="form__role-description" name="role-description"
+                placeholder="Describe your role" maxlength="500">
+            </div>
+
+            <div class="form__item job">
+              <label for="form__start-date" class="form__label job"><span>Data de início</span></label>
+              <input type="date" class="form__text job" id="form__start-date" name="start-date">
+            </div>
+
+          </fieldset>
+        </div>
+      </section>
+
+      <!-- DIV DE RESPOSTA -->
+      <section class="form answer">
+        <div class="form__content answer">
+          <fieldset class="form__fieldset answer">
+            <legend>Resumo do perfil</legend>
+            <div class="form__answer">
+              
             </div>
           </fieldset>
+        </div>
+      </section>
 
-        </form>
+      <section class="form buttons">
+        <div class="form__content buttons">
+          <div class="form__item buttons">
+            <div class="form__buttons buttons">
+              <button type="submit" class="form__submit buttons" id="form__send" name="send">Enviar</button>
+              <button type="submit" class="form__submit buttons" id="form__clear" name="clear">Limpar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       </div>
-    </section>
+      </section>
+    </form>
   </main>
   <script src="js/practice612.js"></script>
 </body>
