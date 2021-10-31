@@ -13,3 +13,12 @@ header {
 #form__start-date {
   width: 200px;
 }
+
+.answer__fields {
+  padding: 15px 0;
+}
+
+.answer {
+  /* visibility: hidden; */
+  display: none;
+}
