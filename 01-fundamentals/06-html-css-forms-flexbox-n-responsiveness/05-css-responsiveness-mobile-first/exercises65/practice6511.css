@@ -1,0 +1,82 @@
+body {
+  font-size: 1.4em;
+  margin: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+figcaption {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.5em;
+    background-color: #eee;
+  }
+
+  h1 {
+    font-size: 1.7em;
+    margin-bottom: 50px;
+  }
+
+  h2:nth-of-type(1) {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  main {
+    flex-flow: row wrap;
+  }
+
+  img {
+
+  }
+
+  section {
+    min-width: 768px;
+  }
+
+  figure {
+    margin: 10px;
+    flex-basis: 40%;
+  }
+
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: beige;
+    font-size: 1.8em;
+    margin: 60px;
+  }
+
+  figure {
+    flex-basis: 30%;
+  }
+
+}
