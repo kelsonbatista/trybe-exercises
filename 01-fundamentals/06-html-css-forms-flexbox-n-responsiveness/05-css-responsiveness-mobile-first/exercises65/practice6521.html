@@ -226,13 +226,15 @@
     const hamb = document.querySelector('.fas');
     const divAsideOne = document.querySelector('.aside-one');
     const divAsideTwo = document.querySelector('.aside-two');
+    divAsideOne.style.transform = 'translateX(-100%)';
+    divAsideTwo.style.transform = 'translateX(-100%)';
     hamb.addEventListener( 'click', () => {
-      console.log(divAsideOne.style.display);
-      if (divAsideOne.style.display === 'none') {
-        console.log(true);
-        divAsideOne.style = 'display: block; animation: open 0.1s linear forwards;';
+      if (divAsideOne.style.transform !== 'translateX(0px)') {
+        divAsideOne.style = 'transform: translateX(0px)';
+        divAsideTwo.style = 'transform: translateX(0px)';
       } else {
-        divAsideOne.style = 'display: none; animation: close 0.3s linear forwards';
+        divAsideOne.style = 'transform: translateX(-100%)';
+        divAsideTwo.style = 'transform: translateX(-100%)';
       }
     });
   </script>
