@@ -119,45 +119,50 @@ footer p:nth-of-type(2) {
 
 @media screen and (min-width: 1000px) {
 
-.container {
-  /* display: flex; */
-}
+  .container {
+    display: flex;
+  }
 
-.fas {
-  display: none;
-}
+  .fas {
+    display: none;
+  }
 
-aside {
-  order: -1;
-  background-color: green;
-}
+  aside {
+    all: unset;
+  }
 
-.aside-one {
-  all: unset;
-}
+  .aside-one {
+    all: unset;
+    color: red;
+  }
 
-.aside-two {
-  all: unset;
-}
+  .aside-two {
+    all: unset;
+  }
 
-nav {
-  all: unset;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  header p {
+    display: block;
+    width: 1000px;
+    flex-wrap: wrap;
+  }
 
-nav ul {
-  all: unset;
-  display: flex;
-  width: 100vw;
-  justify-content: space-around;
-  margin-left: -80px;
-}
+  nav {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-nav li {
-  all: unset;
-  padding-left: 70px;
-}
+  nav ul {
+    all: unset;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin-left: -80px;
+  }
 
+  nav li {
+    all: unset;
+    padding-left: 70px;
+  }
 }
