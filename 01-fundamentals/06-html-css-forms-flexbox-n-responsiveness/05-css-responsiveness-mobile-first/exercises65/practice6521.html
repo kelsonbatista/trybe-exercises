@@ -225,20 +225,24 @@
   </div>
 
   <script>
-    const hamb = document.querySelector('.fas');
-    const divAsideOne = document.querySelector('.aside-one');
-    const divAsideTwo = document.querySelector('.aside-two');
-    divAsideOne.style.transform = 'translateX(-100%)';
-    divAsideTwo.style.transform = 'translateX(-100%)';
-    hamb.addEventListener( 'click', () => {
-      if (divAsideOne.style.transform !== 'translateX(0px)') {
-        divAsideOne.style = 'transform: translateX(0px)';
-        divAsideTwo.style = 'transform: translateX(0px)';
-      } else {
-        divAsideOne.style = 'transform: translateX(-100%)';
-        divAsideTwo.style = 'transform: translateX(-100%)';
-      }
-    });
+  const divAside = document.querySelector('.aside');
+  window.addEventListener('resize', () => {
+    if (window.screen.width < 960) {
+      divAside.style.transform = 'translateX(-100%)';
+    } else {
+      divAside.style.transform = 'translateX(0px)';
+    }
+  });
+
+  const hamb = document.querySelector('.fas');
+  hamb.addEventListener( 'click', () => {
+    if (divAside.style.transform !== 'translateX(0px)') {
+      divAside.style = 'transform: translateX(0px)';
+    } else {
+      divAside.style = 'transform: translateX(-100%)';
+    }
+  });
+
   </script>
 
 </body>

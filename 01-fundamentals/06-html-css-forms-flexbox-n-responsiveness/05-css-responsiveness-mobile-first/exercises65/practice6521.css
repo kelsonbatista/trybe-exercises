@@ -1,56 +1,55 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-  margin: 40px;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.4em;
-  line-height: 1.7em;
+  font-size: clamp(20px, 3.7vw, 24px);
+  line-height: clamp(30px, 5.5vw, 42px);
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
 }
 
-header {
+.container {
+  width: 80vw;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  margin-top: 12vh;
+  margin-left: -80px;
 }
 
 header p {
-  font-size: 2.1em;
+  font-size: clamp(36px, 7.5vw, 50px);
+  line-height: clamp(46px, 9.5vw, 70px);
   font-weight: 700;
-  margin: 120px 0 50px;
   text-align: center;
-  line-height: 1.3em;
   order: 2;
 }
 
 header nav {
   order: 1;
-  background-color: #222;
-  color: white;
   position: fixed;
-  width: 100vw;
+  width: 94vw;
   top: 0;
   left: 0;
   padding: 15px;
   height: 78px;
-  box-shadow: 0px 5px 15px #222;
-}
-
-nav {
   display: flex;
   justify-content: space-between;
+  background-color: #222;
+  box-shadow: 0px 5px 15px #222;
+  color: white;
   z-index: 20;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -59,15 +58,15 @@ nav li {
 }
 
 header i {
-  font-size: 2em;
+  font-size: 45px;
   padding: 3px 10px;
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: clamp(26px, 6vw, 40px);
 }
 
-.aside-one {
+.aside {
   background-color: #f5f5f5;
   position: fixed;
   top: 78px;
@@ -75,18 +74,7 @@ h1 {
   padding: 20px 40px;
   width: 100vw;
   height: 100vh;
-  line-height: 1.5em;
-  transition: transform 250ms ease-in-out;
-}
-
-.aside-two {
-  position: fixed;
-  top: 580px;
-  left: 0;
-  padding: 20px 40px;
-  z-index: 1;
-  width: 100vw;
-  line-height: 1.5em;
+  line-height: clamp(26px, 6vw, 38px);
   transition: transform 250ms ease-in-out;
 }
 
@@ -94,85 +82,98 @@ aside ul {
   list-style-type: none;
 }
 
+.main-content {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 100px;
+  margin-left: 15px;
+}
+
 footer {
   background-color: #222;
   color: white;
-  margin: 0 -30px;
-  padding: 10px 30px;
+  width: 100vw;
+  padding: 20px 80px;
   text-align: center;
   box-shadow: 0px -5px 15px #222;
-  line-height: 1.1em;
-}
-
-footer h3 , footer p:nth-of-type(1) {
-  font-size: 0.9em;
-  
+  line-height: clamp(22px, 6vw, 34px);
 }
 
 footer p:nth-of-type(2) {
-  font-size: 0.7em;
+  font-size: clamp(16px, 3vw, 20px);
 }
 
-@media screen and (min-width: 768px) {
+/* ----------------- SCREEN 960PX ------------------ */
 
-}
+@media screen and (min-width: 960px) {
 
-@media screen and (min-width: 1000px) {
+  body {
+    font-size: clamp(20px, 2.5vw, 24px);
+    line-height: clamp(30px, 4.5vw, 36px);
+  }
 
   .container {
-    /* display: flex; */
-    /* flex-flow: wrap; */
+    width: 90vw;
+    margin-left: -3.5vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 
   .fas {
     display: none;
   }
 
-  .aside {
-    float: right;
-    display: block;
-  }
-
-  aside {
-    all: unset;
-  }
-
-  .aside-one {
-    all: unset;
-    color: red;
-  }
-
-  .aside-two {
-    all: unset;
-  }
-
   header p {
     display: block;
-    width: 100%;
+    width: 90vw;
   }
 
-  nav {
-    all: unset;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  header nav {
+    width: 100vw;
+    height: 100px;
   }
 
   nav ul {
     all: unset;
     display: flex;
     width: 100vw;
+    align-items: center;
     justify-content: space-around;
-    margin-left: -80px;
+    margin-left: -15px;
   }
 
   nav li {
     all: unset;
-    padding-left: 70px;
+  }
+
+  .aside {
+    all: unset;
+    width: 30vw;
+    padding: 20px;
+    background-color: #eee;
+    border-left: 6px double black;
+    order: 2;
   }
 
   .main-content {
-    margin: 0 80px;
-    display: block;
+    width: 50vw;
+    order: 1;
+    padding: 0 20px;
   }
+
+  footer {
+    order: 3;
+  }
+
+}
+
+/* ----------------- SCREEN 1300PX ------------------ */
+
+@media screen and (min-width: 1300px) {
+
+ .aside {
+   background-color: blanchedalmond;
+ }
+
 }
