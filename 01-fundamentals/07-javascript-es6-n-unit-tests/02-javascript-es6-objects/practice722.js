@@ -33,3 +33,8 @@ function showSize(obj) {
   return Object.keys(obj).length;
 }
 console.log(showSize(lesson3));
+
+function listValues(obj) {
+  return Object.values(obj);
+}
+console.log(listValues(lesson1));
