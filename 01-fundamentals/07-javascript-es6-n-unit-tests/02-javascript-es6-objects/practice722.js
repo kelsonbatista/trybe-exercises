@@ -47,14 +47,14 @@ const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 console.log(allLessons);
 
 //EXERCICIO 6
-const totalStudents = () => {
+const totalStudents = (obj) => {
   let sum = 0;
-  for(let i in allLessons) {
-    sum += allLessons[i].numeroEstudantes;
+  for(let i in obj) {
+    sum += obj[i].numeroEstudantes;
   }
   return sum;
 }
-console.log(totalStudents());
+console.log(totalStudents(allLessons));
 
 //EXERCICIO 7
 const getValue = (obj, number) => Object.values(obj)[number];
@@ -63,3 +63,13 @@ console.log(getValue(lesson3, 3));
 //EXERCICIO 8
 const verifyPair = (obj, key, value) => { return (obj[key] === value) ? true : false; }
 console.log(verifyPair(lesson3, 'turno', 'noite'));
+
+//BONUS 1
+const countStudents = (obj) => {
+  let sum = 0;
+  for(let i in obj) {
+    if (obj[i].materia === 'Matemática') sum += obj[i].numeroEstudantes;
+  }
+  return sum;
+}
+console.log(countStudents(allLessons));
