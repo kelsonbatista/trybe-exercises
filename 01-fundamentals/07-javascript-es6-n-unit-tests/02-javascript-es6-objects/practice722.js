@@ -24,3 +24,9 @@ function modifyObject(object, key, value) {
 }
 
 console.log(modifyObject(lesson2, 'turno', 'noite'));
+
+function listKeys(obj) {
+  return Object.keys(obj);
+}
+
+console.log(listKeys(lesson1));
