@@ -49,3 +49,7 @@ const totalStudents = () => {
   return sum;
 }
 console.log(totalStudents());
+
+//EXERCICIO 7
+const getValue = (obj, number) => Object.values(obj)[number];
+console.log(getValue(lesson3, 3));
