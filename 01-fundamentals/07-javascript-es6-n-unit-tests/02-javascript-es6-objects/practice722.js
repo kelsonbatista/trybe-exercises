@@ -24,9 +24,10 @@ function modifyObject(object, key, value) {
 }
 console.log(modifyObject(lesson2, 'turno', 'noite'));
 
-function listKeys(obj) {
-  return Object.keys(obj);
-}
+// function listKeys(obj) {
+//   return Object.keys(obj);
+// }
+const listKeys = (obj) => Object.keys(obj);
 console.log(listKeys(lesson1));
 
 function showSize(obj) {
@@ -34,7 +35,8 @@ function showSize(obj) {
 }
 console.log(showSize(lesson3));
 
-function listValues(obj) {
-  return Object.values(obj);
-}
+const listValues = (obj) => Object.values(obj);
 console.log(listValues(lesson1));
+
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+console.log(allLessons);
