@@ -22,11 +22,14 @@ function modifyObject(object, key, value) {
   object[key] = value;
   return object;
 }
-
 console.log(modifyObject(lesson2, 'turno', 'noite'));
 
 function listKeys(obj) {
   return Object.keys(obj);
 }
-
 console.log(listKeys(lesson1));
+
+function showSize(obj) {
+  return Object.keys(obj).length;
+}
+console.log(showSize(lesson3));
