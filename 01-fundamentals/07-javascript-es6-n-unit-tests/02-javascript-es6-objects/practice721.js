@@ -25,12 +25,12 @@ const order = {
       }
     },
     delivery: {
-      deliveryPerson: 'Ana Silveira',
+      deliveryPerson: 'Luiz Silva',
       price: 5,
     }
   },
   payment: {
-    total: 60,
+    total: 50,
   },
 };
 
@@ -48,6 +48,7 @@ console.log(customerInfo(order));
 const orderModifier = (order) => {
   // Adicione abaixo as informações necessárias.
 
+  return `Olá ${order['order']['delivery'].deliveryPerson}, o total do seu pedido de ${Object.keys(order.order.pizza)[0]}, ${Object.keys(order.order.pizza)[1]} e ${order.order.drinks.coke.type} é R$ ${order['payment'].total.toFixed(2)}.`;
 }
 
-// orderModifier(order);
+console.log(orderModifier(order));
