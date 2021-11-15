@@ -25,3 +25,5 @@ someOtherfoler/
 *.rar
 *.tar
 *.zip
+package-lock.json
+package.json
