@@ -1,5 +1,4 @@
 const searchEmployee = require('./practice73B1.js');
-
 describe('Practice 73 Bonus 1', () => {
 
   it('Verifica se o id não consta no cadastro e retorna o erro "ID não identificada"', () => {
