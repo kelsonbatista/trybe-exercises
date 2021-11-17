@@ -1,0 +1,16 @@
+{
+  "name": "exercises73",
+  "version": "1.0.0",
+  "main": "loginValidation.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  },
+  "dependencies": {},
+  "description": ""
+}
