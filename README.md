@@ -30,51 +30,51 @@ Trybe is a web development school focused on professional success of its student
 
 **Block 04 - [Javascript and Programming Logic](https://github.com/kelsonbatista/trybe-exercises/tree/main/01-fundamentals/04-javascript-n-logic)**
 
-- [ ] 4.1 - Introduction to Javascript
-- [ ] 4.1 - Javascript - First steps
-- [ ] 4.2 - Javascript - Array and loop For
-- [ ] 4.3 - Javascript - Programming logic and Algorithm
-- [ ] 4.4 - Javascript - Objects and functions
-- [ ] 4.5 - Project - Playground Functions
+- [x] 4.1 - Introduction to Javascript
+- [x] 4.1 - Javascript - First steps
+- [x] 4.2 - Javascript - Array and loop For
+- [x] 4.3 - Javascript - Programming logic and Algorithm
+- [x] 4.4 - Javascript - Objects and functions
+- [x] 4.5 - Project - Playground Functions
 
 **Block 05 - [Javascript: DOM, Events and Web Storage](https://github.com/kelsonbatista/trybe-exercises/tree/main/01-fundamentals/05-javascript-dom-events-n-web-storage)**
 
-- [ ] 5.1 - Javascript - DOM and selectors
-- [ ] 5.2 - Javascript - Working with elements
-- [ ] 5.3 - Javascript - Events
-- [ ] 5.4 - Javascript - Wev Storage
-- [ ] 5.5 - Project - Javascript Fundamentals
-- [ ] 5.5 - Project - Art with Pixels
-- [ ] 5.6 - Proejct - Tasks list
-- [ ] 5.7 - Project(Bonus) - Meme generator
-- [ ] 5.7 - Project(Bonus) - Guess the color
-- [ ] 5.7 - Project(Bonus) - Misterious letter
+- [x] 5.1 - Javascript - DOM and selectors
+- [x] 5.2 - Javascript - Working with elements
+- [x] 5.3 - Javascript - Events
+- [x] 5.4 - Javascript - Wev Storage
+- [x] 5.5 - Project - Javascript Fundamentals
+- [x] 5.5 - Project - Art with Pixels
+- [x] 5.6 - Proejct - Tasks list
+- [x] 5.7 - Project(Bonus) - Meme generator
+- [x] 5.7 - Project(Bonus) - Guess the color
+- [x] 5.7 - Project(Bonus) - Misterious letter
 
 **Block 06 - [HTML and CSS: Forms, Flexbox and Responsiveness](https://github.com/kelsonbatista/trybe-exercises/tree/main/01-fundamentals/06-html-css-forms-flexbox-n-responsiveness)**
 
-- [ ] 6.1 - HTML and CSS - Forms
-- [ ] 6.2 - Javascript libraries and CSS Framework
-- [ ] 6.3 - Introduction to CSS Flexbox
-- [ ] 6.3 - CSS Flexbox - Part 1
-- [ ] 6.4 - CSS Flexbox - Part 2
-- [ ] 6.5 - CSS Responsive - Mobile first
-- [ ] 6.6 - Project - Trybewarts
+- [x] 6.1 - HTML and CSS - Forms
+- [x] 6.2 - Javascript libraries and CSS Framework
+- [x] 6.3 - Introduction to CSS Flexbox
+- [x] 6.3 - CSS Flexbox - Part 1
+- [x] 6.4 - CSS Flexbox - Part 2
+- [x] 6.5 - CSS Responsive - Mobile first
+- [x] 6.6 - Project - Trybewarts
 
 **Block 07 - [Javascript ES6 and Unit Tests](https://github.com/kelsonbatista/trybe-exercises/tree/main/01-fundamentals/07-javascript-es6-n-unit-tests)**
 
-- [ ] 7.1 - Javascript ES6 - let, const, arrow functions and template literals
-- [ ] 7.2 - Javascript ES6 - Objects
-- [ ] 7.3 - First steps with Jest
-- [ ] 7.4 - Project - Javascript Unit Tests
+- [x] 7.1 - Javascript ES6 - let, const, arrow functions and template literals
+- [x] 7.2 - Javascript ES6 - Objects
+- [x] 7.3 - First steps with Jest
+- [x] 7.4 - Project - Javascript Unit Tests
 
 **Block 08 - [Javascript ES6: Higher Order Functions](https://github.com/kelsonbatista/trybe-exercises/tree/main/01-fundamentals/08-javascript-es6-higher-order-functions)**
 
-- [ ] 8.1 - Javascript ES6 - Introduction to Higher Order Functions
-- [ ] 8.2 - Javascript ES6 - Higher Order Functions - forEach, find, some, every, sort
-- [ ] 8.3 - Javascript ES6 - Higher Order Functions - map and filter
-- [ ] 8.4 - Javascript ES6 - Higher Order Functions - reduce
-- [ ] 8.5 - Javascript ES6 - spread operator, rest parameter, destructuring and more
-- [ ] 8.6 - Project - Zoo functions
+- [x] 8.1 - Javascript ES6 - Introduction to Higher Order Functions
+- [x] 8.2 - Javascript ES6 - Higher Order Functions - forEach, find, some, every, sort
+- [x] 8.3 - Javascript ES6 - Higher Order Functions - map and filter
+- [x] 8.4 - Javascript ES6 - Higher Order Functions - reduce
+- [x] 8.5 - Javascript ES6 - spread operator, rest parameter, destructuring and more
+- [x] 8.6 - Project - Zoo functions
 
 **Block 09 - [Asynchronous Javascript and Promises](https://github.com/kelsonbatista/trybe-exercises/tree/main/01-fundamentals/09-javascript-asynchronous-n-promises)**
 
