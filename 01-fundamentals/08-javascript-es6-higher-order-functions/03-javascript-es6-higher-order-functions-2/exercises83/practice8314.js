@@ -63,9 +63,9 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-// 2 - Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author , com o nome da pessoa autora do livro, e uma propriedade age com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o livro foi lançado.
+// 4 - Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
 
-const book = books.map((element) => ({ nome: element.author.name, idade: (element.releaseYear - element.author.birthYear)}));
-const orderByAuthorAge = book.sort((a, b) => a.idade - b.idade);
+const book = books.filter((element) => ((new Date().getFullYear() - element.releaseYear) > 60));
+const orderBooks = book.sort((a, b) => a.releaseYear - b.releaseYear);
 
-console.log(orderByAuthorAge);
+console.log(orderBooks);
