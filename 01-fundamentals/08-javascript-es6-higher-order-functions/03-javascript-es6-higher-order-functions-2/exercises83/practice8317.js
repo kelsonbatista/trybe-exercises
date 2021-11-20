@@ -63,12 +63,16 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-// 6 Crie um array com o nome de todos os livros com mais de 60 anos de publicaç
+// 7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais
 
-function oldBooks() {
-  const book = books.filter((element) => (new Date().getFullYear() - element.releaseYear) > 60);
-  return book.map((element) => element.name);
+function authorWith3DotsOnName() {
+  // escreva seu código aqui
+  const book = books.find((element) => (
+    element.author.name.split(' ')
+    .filter((element) => element.endsWith('.')).length === 3
+  )).name;
+  return book;
 }
 
-console.log(oldBooks());
+console.log(authorWith3DotsOnName());
 
