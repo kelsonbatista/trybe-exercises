@@ -11,7 +11,7 @@ const getRepos = (url) => (
 
 // implemente seus testes aqui
 describe('Teste de verificação de respositórios', () => {
-  it('verify respository sd-01-week4-5-project-todo-list', () {
+  it('verify respository sd-01-week4-5-project-todo-list ', () {
 
   });
 });
