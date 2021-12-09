@@ -1,0 +1,19 @@
+{
+  "name": "exercises93",
+  "version": "1.0.0",
+  "description": "",
+  "main": "practice9311.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.3"
+  },
+  "dependencies": {
+    "@types/jest": "^27.0.3",
+    "node-fetch": "^2.6.1"
+  }
+}
