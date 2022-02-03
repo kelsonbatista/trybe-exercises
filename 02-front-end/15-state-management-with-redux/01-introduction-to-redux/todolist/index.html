@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.0/redux.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Redux</h1>
+    <section>
+      <label htmlFor="taskInput">
+        Incluir tarefa: 
+        <input type="text" id="taskInput" />
+      </label>
+      <button id="btnAddTask">Adicionar</button>
+    </section>
+    <section id="taskBoard">
+      
+    </section>
+  </main>
+
+  <script>
+    
+    // Config do Redux
+    const INITIAL_STATE = {
+      tasks: [],
+    }
+
+    const todoReducer = (state = INITIAL_STATE, action) => {
+      switch (action.type) {
+        case 'ADD_TASK':
+          return { tasks: [...state.tasks, action.payload] }
+        case 'DELETE_TASK':
+          return tasks.pop();
+      }
+    }
+
+    const addTaskAction = (myTask) => ({
+      type: 'ADD_TASK',
+      payload: myTask,
+    })
+
+    const deleteTaskAction = (myTask) => ({
+      type: 'DELETE_TASK',
+      payload: myTask,
+    })
+
+    const store = Redux.createStore(todoReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+    const renderTask = (tasks) => {
+      const taskBoard = document.getElementById('taskBoard');
+      taskBoard.innerText = '';
+      const taskItem = document.getElementById('taskItem');
+      tasks.forEach((task) => {
+        const pItem = document.createElement('p');
+        pItem.innerText = task;
+        const pDelete = document.createElement('a');
+        pDelete.href="#"
+        pDelete.id="deleteTask"
+        pDelete.innerText = '[X]';
+        pItem.append(pDelete);
+        taskBoard.appendChild(pItem);
+      })
+    }
+
+    store.subscribe(() => {
+      renderTask(store.getState().tasks);
+    })
+
+    // Eventos da pagina
+    const btnAddTask = document.getElementById('btnAddTask');
+    btnAddTask.addEventListener('click', () => {
+      const taskInput = document.getElementById('taskInput').value;
+      console.log(taskInput);
+      store.dispatch(addTaskAction(taskInput));
+    });
+
+    const taskBoard = document.getElementById('taskBoard');
+    const deleteTask = document.getElementById('deleteTask');
+    deleteTask.addEventListener('click', () => {
+      store.dispatch(deleteTask());
+    })
+
+  </script>
+
+</body>
+</html>
