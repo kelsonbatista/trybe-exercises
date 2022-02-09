@@ -1,0 +1,60 @@
+ol li {
+  background-color: yellow;
+}
+
+ol li:nth-child(even){
+  background-color: green;
+}
+
+ol li:nth-child(odd) {
+  text-transform: uppercase;
+}
+
+ul li:nth-child(-n+3) {
+  color: blue;
+}
+
+ul li[data-content='Java'] {
+  background-color: pink;
+}
+
+ul li[data-content='JavaScript'] {
+  background-color: pink;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+h1, h2, h3 {
+  color: red;
+}
+
+h1 em, h2 em, h3 em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+a:hover {
+ font-weight: bold;
+}
+
+a:hover[data-content='StackOverflow'] {
+  color: orangered;
+ }
+ a:hover[data-content='W3Schools'] {
+  color: green;
+ }
+ a:hover[data-content='MDN Web Docs'] {
+  color: black;
+ }
+ a:hover[data-content='DevDocs'] {
+  color: yellow;
+ }
+a:hover[data-content='Trybe'] {
+  color: green;
+ }

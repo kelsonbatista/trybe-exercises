@@ -1,0 +1,24 @@
+h1, p {
+  text-align: center;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+ul p, ol p {
+  text-align: left;
+}
+
+li {
+  transition: 0.3s;
+}
+
+li:hover {
+  background-color: lightgreen;
+}
+
+li:active {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
