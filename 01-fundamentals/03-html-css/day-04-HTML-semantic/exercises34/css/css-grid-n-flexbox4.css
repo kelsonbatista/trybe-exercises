@@ -1,0 +1,84 @@
+
+/* EXEMPLO CSS GRID 3  */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  background-color: #1d1e20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+img {
+  max-width: 100%; /* a imagem pode ocupar 100% do tamanho do container que ela se encontra ou da propria img*/
+  height: 100%;
+  align-content: center;
+  display: block;
+}
+
+.section-grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  grid-gap: 20px;
+}
+
+.grid3-item:nth-child(1) {
+  grid-row: 1/3;
+}
+
+.grid3-item {
+  display: grid;
+}
+
+.grid3-item img {
+  grid-column: 1;
+  grid-row: 1/3;
+  align-self: end;
+}
+
+.grid3-item p {
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  color: white;
+  grid-column: 1;
+  grid-row: 2;
+  height: 25px;
+  align-self: end;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width:600px) {
+
+  .section-grid3 {
+    grid-template-columns: 1fr; 
+  }
+
+}

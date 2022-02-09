@@ -1,0 +1,34 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.list1 {
+  text-align: justify;
+  color: white;
+}
+
+.list1::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.list1-item {
+  display: inline-block;
+  width: 25%;
+  height: 150px;
+  text-align: center;
+}
+
+.list1-item-first{
+  background-color: orange;
+}
+
+.list1-item-second {
+  background-color: lightgreen;
+}
+
+.list1-item-third {
+  background-color: lightblue;
+}

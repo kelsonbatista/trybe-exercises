@@ -1,0 +1,82 @@
+
+/* EXEMPLO CSS GRID 1  */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  background-color: #1d1e20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+img {
+  max-width: 100%; /* a imagem pode ocupar 100% do tamanho do container que ela se encontra ou da propria img*/
+  display: block;
+}
+
+.section-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* a unidade fr é fracional , como se tivesse 3 partes , cada com 33% - pode ser representado como repeat(3, 1fr)*/
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  grid-gap: 20px;
+}
+
+.section-grid1 div:nth-child(n+4) {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.section-grid1 div.anuncio {
+  grid-column: 1;
+  grid-row: 2/5; /* quero que o anuncio ocupe o espaço da linha 2 a linha 5 (conta desde o h1)*/
+  display: block; /*volta ao estado anterior de block*/
+  background-color: orange;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width:600px) {
+
+  .section-grid1 {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .section-grid1 div:nth-child(n+4) {
+    display: block;
+  }
+  
+  .anuncio {
+    grid-column: auto;
+    grid-row: auto;
+    order: -1; /*muda a ordem caso for necessário*/
+  }
+}
