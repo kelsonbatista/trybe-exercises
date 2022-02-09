@@ -1,0 +1,32 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.list1 {
+  text-align: center;
+}
+
+.list1-item {
+  width: 33%;
+  height: 150px;
+  display: inline;
+  color: white;
+}
+
+.list1-item-first{
+  background-color: orange;
+}
+
+.list1-item-second {
+  background-color: aqua;
+}
+
+.list1-item-third {
+  background-color: blue;
+}
+
+h3 {
+  text-align: right;
+  background-color: yellow;
+}

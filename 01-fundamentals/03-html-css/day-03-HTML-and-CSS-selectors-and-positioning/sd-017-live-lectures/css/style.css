@@ -1,0 +1,122 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, ul li {
+  color: #475550;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  color: #11a36a;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 60px;
+}
+
+#main-title {
+  margin-bottom: 30px;
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+.testimonial-name {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.button {
+  background-color: #11a36a;
+  color: white;
+  text-decoration: none;
+  padding: 20px 50px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 50px;
+}
+
+.header {
+  background-image: url(https://uploads-ssl.webflow.com/5d4c18a28620ae5d4f33af94/5d4c18a28620ae56f733b01a_hero-image.jpg);
+  background-size: cover;
+  background-position: 50% 25%;
+  padding: 60px 30 px 40px;
+}
+
+.header-content {
+  max-width: 650px;
+}
+
+.header-content p {
+  max-width: 80%;
+  margin-bottom: 30px;
+}
+
+.market {
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.market p {
+  max-width: 60%;
+  margin: auto;
+  line-height: 24px;
+}
+
+.picture {
+  border-radius: 50%;
+}
+
+.student-testimonial {
+  padding: 30px 70px 90px 70px;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+.student-content {
+  width: 30%;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.student-content p {
+  margin: 0 10px;
+}
+
+.learning {
+  padding: 30px 70px;
+  background-color: lightgrey;
+  min-height: 350px;
+}
+
+.learning li {
+  margin-bottom: 30px;
+  list-style-type: square;
+}
+
+.learning-left {
+  float: left;
+  max-width: 35%;
+}
+
+.learning-right {
+  float: right;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+}
+
+footer a {
+  
+}

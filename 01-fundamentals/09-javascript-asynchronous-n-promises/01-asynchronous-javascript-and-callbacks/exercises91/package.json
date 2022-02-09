@@ -1,0 +1,16 @@
+{
+  "name": "exercises91",
+  "version": "1.0.0",
+  "description": "",
+  "main": "course9111.js",
+  "dependencies": {
+    "jest": "^27.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
