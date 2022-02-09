@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Submeter Palestra</title>
+</head>
+<body>
+  <header class="speaker-form-header">
+    <h1>Submeter Palestra</h1>
+    <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
+  </header>
+  <form action="" method="get" class="speaker-form">
+    <div class="form-row">
+      <div class="line-content">
+        <label for="full-name">Nome</label>
+        <input type="text" name="full-name" id="full-name" required>
+      </div>
+    </div>
+    <div class="line-content">
+      <input type="password" name="senha" id="senha">
+    </div>
+    <div class="line-content">
+      <fieldset class="legacy-form-row">
+        <legend>Tipo de Palestra</legend>
+        <input type="radio" name="tipo-palestra" id="tipo1" value='palestra' checked>
+        <label for="tipo1">Sala principal</label>
+        <input type="radio" name="tipo-palestra" id="tipo2" value="workshop" required>
+        <label for="tipo2">Workshop</label>
+      </fieldset>
+    </div>
+    <div class="line-content">
+      <label for="t-shirt">Tamanho da camisa:</label>
+      <select name="t-shirt" id="t-shirt">
+        <option value="P">Pequena</option>
+        <option value="M">Média</option>
+        <option value="G">Grande</option>
+      </select>
+    </div>
+    <div class="line-content">
+      <label for="resumo">Resumo</label>
+      <textarea name="resumo" id="resumo" cols="30" rows="10"></textarea>
+      <span class="instructions">Descreva a sua palestra em 500 palavras ou menos!</span>
+    </div>
+    <div class="line-content">
+      <label for="disponibilidade">
+        <input type="checkbox" name="disponibilidade" id="disponibilidade" value='disponibilidade-ok'>
+        <span>Eu tenho disponibilidade de participar da palestra nessa data!</span>
+      </label>
+    </div>
+    <div class="line-content">
+    <button type="submit" class="btn-enviar">Enviar</button>
+    </div>
+  </form>
+</body>
+</html>
+
+<!-- Resposta da URL no Browser ao clicar no botão de enviar: 
+http://127.0.0.1:5500/index.html?
+full-name=Alexandre+Atanes+de+Jesus&
+tipo-palestra=palestra&
+t-shirt=G&
+resumo=Gostaria+de+falar+sobre+desenvolvimento+de+sistemas+WEB&
+disponibilidade=disponibilidade-ok -->
