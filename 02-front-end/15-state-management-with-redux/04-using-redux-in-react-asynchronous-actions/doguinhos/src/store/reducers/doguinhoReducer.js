@@ -10,7 +10,7 @@ const FAILED_REQUEST = 'FAILED_REQUEST';
 
 const doguinhoReducer = (state = INITIAL_STATE, action) => {
   // console.log(action, 'action');
-  // console.log(state,'state');
+  console.log(state,'state');
   switch (action.type) {
     case REQUEST_IMAGE:
       return {
