@@ -1,7 +1,6 @@
 FROM node:14-alpine AS build
 WORKDIR /appdocker
-COPY ./appdocker /usr/src/appdocker
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
 RUN echo "node_modules" > .dockerignore
 COPY . .
