@@ -1,3 +1,3 @@
 FROM chuanwen/cowsay
-ENTRYPOINT ["/usr/games/cowsay"]
-CMD ["Olá"]
+ENTRYPOINT ["/usr/games/cowsay", "Olá"]
+#CMD ["Olá"]
