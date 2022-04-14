@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  # servidor web
+  web:
+    # build do arquivo dockerfile
+    build: .
+    image: ubuntu/nginx:latest
+    # volume (.) arquivos locais e html no nginx
+    volumes:
+      - .:/usr/share/nginx/html
+    ports:
+      - 5500:80
+    # dependencia: só executa o servidor qdo o mysql for executado e estiver online
+    depends_on:
+      - mysql
+
+  #banco de dados mysql
+  mysql:
+    image: mysql:5.7
+    restart: always
+    #variaveis de ambiente (-e)
+    environment:
+      - MYSQL_ROOT_PASSWORD=docker
+    ports:
+      - 6000:3306
+    # a pasta database vai ser criada local
+    volumes:
+      - ./database:/var/lib/mysql
