@@ -1,0 +1,26 @@
+{
+  "name": "imc-calculator",
+  "version": "1.0.0",
+  "description": "This is a IMC calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "imc": "node imc.js",
+    "speed": "node speed.js",
+    "raffle": "node raffle.js"
+  },
+  "keywords": [
+    "imc",
+    "weigth",
+    "calculator"
+  ],
+  "author": "Kelson",
+  "license": "ISC",
+  "devDependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+}
