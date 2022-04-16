@@ -1,0 +1,27 @@
+{
+  "name": "22.2-asynchronous-flux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "exercise1": "node exercise1.js",
+    "exercise2": "node exercise2.js",
+    "exercise3": "node exercise3.js",
+    "exercise4": "node exercise4.js",
+    "exercise5": "node exercise5.js",
+    "exercise6": "node exercise6.js",
+    "exercise7": "node exercise7.js",
+    "exercise8": "node exercise8.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
