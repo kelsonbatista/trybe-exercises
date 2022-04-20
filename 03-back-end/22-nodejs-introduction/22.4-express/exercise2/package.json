@@ -1,17 +1,21 @@
 {
-  "name": "exercise1",
+  "name": "exercise2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node practice1.js",
-    "dev": "nodemon practice1.js"
+    "start": "node exercicio3.js",
+    "dev": "nodemon exercicio3.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.26.1",
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
