@@ -6,11 +6,12 @@ const {
   getSimpsonsMiddleware,
   getSimpsonsByIdMiddleware,
   postSimpsonsMiddleware,
+  validateTokenMiddleware,
 } = require('./middlewares');
 
 app.use(express.json());
 
-app.get('/simpsons', getSimpsonsMiddleware);
+app.get('/simpsons', validateTokenMiddleware, getSimpsonsMiddleware);
 
 app.get('/simpsons/:id', getSimpsonsByIdMiddleware);
 
