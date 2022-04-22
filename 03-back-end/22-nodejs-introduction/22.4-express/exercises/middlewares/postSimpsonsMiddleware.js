@@ -4,9 +4,9 @@ const postSimpsonsMiddleware = async (req, res) => {
   try {
     const { id, name } = req.body;
     const simpsons = await fsUtils.readSimpsons();
-    const check = simpsons.find((simpson) => simpson.id == id);
+    const checkId = simpsons.find((simpson) => simpson.id == id);
 
-    if(check) return res.status(409).json({ message: 'ID already exists' });
+    if(checkId) return res.status(401).json({ message: 'ID already exists' });
     simpsons.push({ id: `${id}`, name: `${name}` });
     await fsUtils.writeSimpsons(simpsons);
     return res.status(204).end();

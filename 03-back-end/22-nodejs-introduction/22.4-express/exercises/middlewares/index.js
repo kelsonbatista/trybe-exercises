@@ -1,11 +1,13 @@
-const { getSimpsonsMiddleware } = require('./getSimpsonsMiddleware');
+const { errorMiddleware } = require('./errorMiddleware');
 const { getSimpsonsByIdMiddleware } = require('./getSimpsonsByIdMiddleware');
+const { getSimpsonsMiddleware } = require('./getSimpsonsMiddleware');
 const { postSimpsonsMiddleware } = require('./postSimpsonsMiddleware');
 const { validateTokenMiddleware } = require('./validateTokenMiddleware');
 
 module.exports = {
-  getSimpsonsMiddleware,
+  errorMiddleware,
   getSimpsonsByIdMiddleware,
+  getSimpsonsMiddleware,
   postSimpsonsMiddleware,
   validateTokenMiddleware,
 }
