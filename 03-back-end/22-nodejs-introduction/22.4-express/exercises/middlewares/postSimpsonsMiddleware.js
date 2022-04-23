@@ -1,4 +1,4 @@
-const fsUtils = require('../fs-utils');
+const fsUtils = require('../utils-fs');
 
 const postSimpsonsMiddleware = async (req, res) => {
   try {
@@ -9,7 +9,7 @@ const postSimpsonsMiddleware = async (req, res) => {
     if(checkId) return res.status(401).json({ message: 'ID already exists' });
     simpsons.push({ id: `${id}`, name: `${name}` });
     await fsUtils.writeSimpsons(simpsons);
-    return res.status(204).end();
+    return res.status(201).end();
   } catch(error) {
     return res.status(500).json({ message: 'Error 500 - Internal Server Error' })
   }

@@ -3,6 +3,7 @@ const { getSimpsonsByIdMiddleware } = require('./getSimpsonsByIdMiddleware');
 const { getSimpsonsMiddleware } = require('./getSimpsonsMiddleware');
 const { postSimpsonsMiddleware } = require('./postSimpsonsMiddleware');
 const { validateTokenMiddleware } = require('./validateTokenMiddleware');
+const { signupMiddleware } = require('./signupMiddleware');
 
 module.exports = {
   errorMiddleware,
@@ -10,4 +11,5 @@ module.exports = {
   getSimpsonsMiddleware,
   postSimpsonsMiddleware,
   validateTokenMiddleware,
+  signupMiddleware,
 }

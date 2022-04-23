@@ -8,9 +8,11 @@ app.use(express.json());
 
 app.get('/simpsons', mw.validateTokenMiddleware, mw.getSimpsonsMiddleware);
 
-app.get('/simpsons/:id', mw.getSimpsonsByIdMiddleware);
+app.get('/simpsons/:id', mw.validateTokenMiddleware, mw.getSimpsonsByIdMiddleware);
 
 app.post('/simpsons', mw.validateTokenMiddleware, mw.postSimpsonsMiddleware);
+
+app.post('/signup', mw.signupMiddleware);
 
 app.use(mw.errorMiddleware);
 

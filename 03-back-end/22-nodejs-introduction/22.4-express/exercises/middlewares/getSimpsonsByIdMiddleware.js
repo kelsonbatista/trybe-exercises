@@ -1,4 +1,4 @@
-const fsUtils = require('../fs-utils');
+const fsUtils = require('../utils-fs');
 
 const getSimpsonsByIdMiddleware = async (req, res) => {
   try {
