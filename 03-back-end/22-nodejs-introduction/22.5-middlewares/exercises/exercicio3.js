@@ -1,4 +1,4 @@
-const express = require('express')();
+const app = require('express')();
 const port = 3001;
 
 const posts = [
@@ -23,16 +23,24 @@ const getPost = (req, res) => {
   return res.status(200).json(idSearch.post);
 }
 
-const handleError = (error, req, res, next) => {
+const handleError = (err, req, res, next) => {
+  const msg = err.message;
+  if(msg === 'Route Not Found') {
+    return res.status(404).json({ message: `Rota '${req.path}' não existe!`});
+  }
   return res.status(500).json({ "message": "Error 500: Internal Server Error" });
 }
 
-express.get('/posts', getPosts);
+app.get('/posts', getPosts);
 
-express.get('/posts/:id', getPost);
+app.get('/posts/:id', getPost);
 
-express.use(handleError);
+app.all('*', (_req, _res) => {
+  throw new Error('Route Not Found');
+});
 
-express.listen(port, () => {
+app.use(handleError);
+
+app.listen(port, () => {
   console.log(`App running at ${port}`);
 })
