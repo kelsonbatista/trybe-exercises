@@ -4,10 +4,10 @@ const port = 3001;
 const URL = 'https://api.coindesk.com/v1/bpi/currentprice/BTC.json';
 
 const authMiddleware = (req, res, next) => {
-  const { token } = req.headers;
+  const token = req.headers.authorization;
   const regex = /([A-Za-z0-9]{12})/i;
-  if(!token.match(regex)) {
-    return res.status(401).json({ "message": "Não autorizado" })
+  if(!regex.test(token)) {
+    return res.status(401).json({ "message": "Not authorized - invalid token" })
   }
   next();
 }
