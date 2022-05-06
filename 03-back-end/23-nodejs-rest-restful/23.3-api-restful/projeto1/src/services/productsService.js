@@ -1,34 +1,48 @@
 const productModel = require("../models/productsModel");
+const productSchema = require("../config/productSchema");
+const { StatusCodes, ReasonPhrases } = require("http-status-codes");
 
-const getAll = async () => {
+const listProductsService = async () => {
   const products = await productModel.listProducts();
   return products;
 };
 
-const getProductById = async (id) => {
+const getByIdService = async (id) => {
   const product = await productModel.getById(id);
+  if (!product)
+    throw { status: StatusCodes.NOT_FOUND, message: ReasonPhrases.NOT_FOUND };
   return product;
 };
 
-const registerProduct = async (name, brand) => {
+const addProductService = async (name, brand) => {
+  const { error } = productSchema.validate({ name, brand });
+  if (error) throw { status: StatusCodes.NOT_FOUND, message: error.message };
   const register = await productModel.addProduct(name, brand);
   return register;
 };
 
-const removeProduct = async (id) => {
+const deleteProductService = async (id) => {
+  const product = await productModel.getById(id);
   const remove = await productModel.deleteProduct(id);
+  if (!product)
+    throw { status: StatusCodes.NOT_FOUND, message: ReasonPhrases.NOT_FOUND };
   return remove;
 };
 
-const changeProduct = async (id, name, brand) => {
+const updateProductService = async (id, name, brand) => {
+  const product = await productModel.getById(id);
+  const { error } = productSchema.validate({ name, brand });
+  if (error) throw { status: StatusCodes.NOT_FOUND, message: error.message };
+  if (!product)
+    throw { status: StatusCodes.NOT_FOUND, message: ReasonPhrases.NOT_FOUND };
   const change = await productModel.updateProduct(id, name, brand);
   return change;
 };
 
 module.exports = {
-  getAll,
-  getProductById,
-  registerProduct,
-  removeProduct,
-  changeProduct,
+  listProductsService,
+  getByIdService,
+  addProductService,
+  deleteProductService,
+  updateProductService,
 };

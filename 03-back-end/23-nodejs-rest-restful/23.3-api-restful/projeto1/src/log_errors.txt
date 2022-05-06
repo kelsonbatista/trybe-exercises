@@ -1,0 +1,5 @@
+
+5/5/2022, 9:42:49 PM - Status 404 - Not Found - Method GET - Path /products/get-by-id/128
+5/5/2022, 9:43:08 PM - Status 404 - Not Found - Method PUT - Path /products/update-product/99
+5/5/2022, 9:43:17 PM - Status 404 - The name must have between 3 and 50 characters - Method PUT - Path /products/update-product/9
+5/5/2022, 9:43:36 PM - Status 404 - Not Found - Method DELETE - Path /products/delete-product/114

@@ -1,4 +1,5 @@
 const connection = require("../config/connection");
+const { StatusCodes, ReasonPhrases } = require("http-status-codes");
 
 const listProducts = async () => {
   const [rows] = await connection.query("SELECT * FROM products");
@@ -19,13 +20,18 @@ const addProduct = async (name, brand) => {
     "INSERT INTO products (name, brand) VALUES (?, ?);",
     [name, brand]
   );
-  return { id: result.insertId, name, brand };
+  return {
+    id: result.insertId,
+    name,
+    brand,
+  };
 };
 
 const deleteProduct = async (id) => {
-  const product = await getById(id);
-  if (!product) return {};
-  await connection.query("DELETE FROM products WHERE id = ?", [id]);
+  const remove = await connection.query("DELETE FROM products WHERE id = ?", [
+    id,
+  ]);
+  return remove;
 };
 
 const updateProduct = async (id, name, brand) => {
@@ -34,16 +40,11 @@ const updateProduct = async (id, name, brand) => {
     [name, brand, id]
   );
   return {
-    id: result.affectedRows,
+    id,
     name,
     brand,
   };
 };
-
-// } catch (err) {
-//   console.error(err);
-//   return process.exit(1);
-// }
 
 module.exports = {
   listProducts,

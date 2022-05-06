@@ -3,7 +3,7 @@ const { StatusCodes } = require("http-status-codes");
 
 const listProducts = async (_req, res, next) => {
   try {
-    const products = await productService.getAll();
+    const products = await productService.listProductsService();
     return res.status(StatusCodes.OK).json(products);
   } catch (err) {
     console.log(`Error found: ${err.message}`);
@@ -13,7 +13,7 @@ const listProducts = async (_req, res, next) => {
 
 const getById = async (req, res, next) => {
   try {
-    const product = await productService.getProductById(req.params.id);
+    const product = await productService.getByIdService(req.params.id);
     return res.status(StatusCodes.OK).json(product);
   } catch (err) {
     console.log(`Error found: ${err.message}`);
@@ -24,7 +24,7 @@ const getById = async (req, res, next) => {
 const addProduct = async (req, res, next) => {
   try {
     const { name, brand } = req.body;
-    const newProduct = await productService.registerProduct(name, brand);
+    const newProduct = await productService.addProductService(name, brand);
     return res.status(StatusCodes.CREATED).json(newProduct);
   } catch (err) {
     console.log(`Error found: ${err.message}`);
@@ -34,7 +34,7 @@ const addProduct = async (req, res, next) => {
 
 const deleteProduct = async (req, res, next) => {
   try {
-    const products = await productService.removeProduct(req.params.id);
+    const products = await productService.deleteProductService(req.params.id);
     return res.status(StatusCodes.NO_CONTENT).json(products);
   } catch (err) {
     console.log(`Error found: ${err.message}`);
@@ -45,7 +45,7 @@ const deleteProduct = async (req, res, next) => {
 const updateProduct = async (req, res, next) => {
   try {
     const { name, brand } = req.body;
-    const products = await productService.changeProduct(
+    const products = await productService.updateProductService(
       req.params.id,
       name,
       brand
