@@ -7,20 +7,20 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=password
     ports:
-      - 3306:3306
+      - 3307:3306
 
   api:
     container_name: api
     image: node:16
     restart: always
     ports:
-      - 3001:3001
+      - 3002:3001
     environment:
       - DB_HOST=mysql
       - DB_NAME=
       - DB_USER=root
       - DB_PASSWORD=password
-      - SERVER_PORT=3001
+      - SERVER_PORT=3002
     volumes:
       - ./:/usr/app
     working_dir: /usr/app
