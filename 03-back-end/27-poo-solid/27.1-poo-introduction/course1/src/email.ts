@@ -90,17 +90,8 @@ const msg4 = new Email(
   'por favor mande noticias estou aguardando!'
 )
 
-const msg5 = new Email(
-  'quinto@email.com',
-  'penelope@email.com',
-  'olá, td bem?',
-  'por favor mande noticias estou aguardando!'
-)
+const list = new MailList([msg1, msg2, msg3]);
 
-const personalList = new MailList([msg1, msg2]);
-const professionalList = new MailList([msg3, msg4]);
+list.addEmail(msg4);
 
-personalList.addEmail(msg5);
-
-console.log('====================== personal list ======================');
-personalList.allEmails.forEach((email) => console.log(email.content));
+console.log(list.allEmails);
