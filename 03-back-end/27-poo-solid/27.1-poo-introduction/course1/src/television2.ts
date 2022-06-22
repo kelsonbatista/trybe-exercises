@@ -17,23 +17,24 @@ class Tv2 {
       TV Marca: ${this._brand}\n
       Tamanho: ${this._size}\n
       Resolução: ${this._resolution}\n
-      Conexões: ${this._connections}
+      Conexões: ${this._connections}\n
+      Conectar: ${this._connectedTo}
     `);
   }
 
   get connectedTo() {
     if (this._connectedTo) return this._connectedTo;
+    return '';
   }
 
   set connectedTo(device: string) {
-    const check = this._connections.includes(device);
+    const check = this._connections.toLowerCase().includes(device.toLowerCase());
     if (check) {
       this._connectedTo = device;
-      console.log(this._connectedTo);
     } else {
-      console.log('Sorry, connection unavailable!');
+      this._connectedTo = `Sorry, connection ${device.toUpperCase()} unavailable!`;
     } 
-
+    console.log(this._connectedTo);
   }
 }
 
@@ -41,5 +42,5 @@ const tv12 = new Tv2('Samsung', 52, 4000, 'HDMI, USB, VGA');
 
 tv12.turnOn();
 
-tv12.connectedTo = 'USB';
-console.log(tv12);
+tv12.connectedTo = 'VGA';
+tv12.turnOn();
