@@ -59,16 +59,16 @@ class Student {
 
   gradesAverage(): number {
     const sumGrades = this.sumGrades();
-    return sumGrades / (this.examsGrades.length + this.worksGrades.length);
+    return Math.round(sumGrades / (this.examsGrades.length + this.worksGrades.length));
   }
 }
 
 const student1 = new Student(1234, 'Jose', [5, 6, 7, 9], [8, 9]);
 console.log(student1);
 console.log(`Soma das notas de ${student1.name}: ${student1.sumGrades()}`);
-console.log(`A média das notas de ${student1.name}: ${student1.gradesAverage().toFixed(2)}\n\n`);
+console.log(`A média das notas de ${student1.name}: ${student1.gradesAverage()}\n\n`);
 
 const student2 = new Student(12345, 'Joao', [5, 5, 7, 8], [7, 4]);
 console.log(student2);
 console.log(`Soma das notas de ${student2.name}: ${student2.sumGrades()}`);
-console.log(`A média das notas de ${student2.name}: ${student2.gradesAverage().toFixed(2)}\n\n`);
+console.log(`A média das notas de ${student2.name}: ${student2.gradesAverage()}\n\n`);
